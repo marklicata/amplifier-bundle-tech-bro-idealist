@@ -1,0 +1,546 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Consumer Product Fundamentals Handbook
+
+“He who works with his hands is a laborer. He who works with his hands and his head is a craftsman. He who works with his hands and his head and his heart is an artist.”
+Saint Francis of Assisi
+
+A good product fulfills a real human need. It changes a person’s life for the better. It does so – above all else – by having a clearly defined sense of purpose – a value delivered in a singularly focused way and realized better than by any other product in the marketplace. 
+
+Finding, mastering and fulfilling this single purpose is the underpinning of a successful consumer product.  Because consumer products do not have the luxury of leaning on enterprise sales, government mandates or partnership perks, consumer products represent the purest form of success – they live and die on customer love.  
+
+But how do we know when a product is finding its purpose? If it is working for the customers? Growing? And is this growth sustainable?  Are new users doing as well as early ones? Is there a core group of users that are fans, and care deeply?... 
+
+Answers to all these questions are knowable, but require focus, attention to detail, and good operation of core product building mechanics. We call those Consumer Product Fundamentals. These fundamentals are something that consumer product teams both proactively and reactively manage on an hourly basis. It is a skill and a method that build exceptional product craftsmanship, and ultimately, artistry. 
+
+This document will describe how to identify, manage and master Consumer Product Fundamentals.
+
+
+Contents
+
+Your True North	4
+Define your Core Value	4
+The Journey: Phases of Growth	5
+Early Phase: Incubation	6
+Growth Phase: Product-Market-Fit	7
+Hypergrowth Phase: Achieving Scale	8
+Mature Phase: Maintenance	9
+The Next Act: Expanding Product Portfolios	9
+Mapping Your Fundamentals	10
+The NorthStar Metric	11
+Output Metrics	11
+Input Metrics	13
+Metrics Hierarchy	13
+Tradeoff metrics	15
+Other Metrics and How to Use	15
+Value: Benefit Metrics	15
+User Acquisition	16
+Engagement	17
+Engagement: Stickiness	18
+Engagement: Social Graph Density	18
+Engagement: Power Users	18
+Retention	20
+Tripwire Metrics	21
+Financial: CAC (Customer Acquisition Cost)	22
+Financial: LTV (Lifetime Value)	24
+Financial: ARPU (Average Revenue Per User)	25
+Financial: Ad metrics	25
+Managing by the numbers: OKRs to Metrics	27
+Putting it all together: From Funnels to Loops	27
+Acquisition Loop	28
+Acquisition Loop KPIs	29
+Engagement Loop	30
+Engagement Loop KPIs	31
+Viral Coefficient	32
+Viral Cycle Time	33
+Methods for Making	34
+Mindset	34
+What Makes a Product Great?	34
+Ethos, Taste, Style and Emotion	35
+The Hierarchy of Engagement	37
+The Magic Moment and the Tipping Point	38
+Experimentation, Testing and Iteration	39
+Instrumentation	39
+Project Management	40
+Audience/User Research	40
+Quality, Features and Papercuts	41
+Engineering for Growth	41
+Acquisition Loops	42
+Engagement Loops	43
+Benchmarking	45
+Aligning Teams to Data	46
+Product Fundamentals Checklist	47
+References	48
+
+
+
+Your True North
+Most teams (and even companies) are often too busy to identify their ultimate destination. But without it even the most talented team can veer dramatically off-course.  As teams expand and grow, maintaining cohesion of vision and focus becomes even more difficult. 
+Start by reviewing the overarching corporate vision and mission, and define the vision, mission, and strategy for your product.  These should have longevity and provide a compass for how you will define your more temporal priorities and objectives.  This clear one-page articulation will help you stay focused, prioritize work and even onboard new team members. But take care to not confuse those concepts1:
+Vision – your why, your raison d'être, your dream, your true north. It should inspire and create a shared sense of purpose for your team. Something they will remember and repeat.
+Mission – inspirational, measurable and achievable overarching objective. This objective should be uniquely specific to your vision.
+Strategy – how you will play in the market – and achieve – the mission.  It must come from the strengths and competitive advantages of your team and broader Microsoft. It is not a plan. But it should help your team easily answer what you will – and even more importantly will not – deliver for your customers. At the minimum it should answer key questions like:
+* What must you be great at?
+* Why do you think you can beat the competition?
+* What are the strategic objectives – and most important aspects – of your product?
+Define your Core Value
+What is the problem your user needs solved? What is the unmet, unfulfilled need that exists today that you want to address? Who is the person who feels this need the most (your target user persona)? The most important part of creating a new product is clearly identifying this specific problem to solve and for who. 
+Solution to this problem is your core value proposition. From there you will naturally arrive to TAM (how many people may need this problem solved) and SAM (how many of them you can theoretically serve) and SOM (the actual people you will help immediately). But more on that later. Pick one problem and one target before you expand. If you go too broad too fast, you won’t find that illusive product-market-fit. This is your core hypothesis, now the journey is to fulfill its promise. 
+The Journey: Phases of Growth
+When you start you will not know if your core value proposition will hold water. It is a theory that you will need to prove and possibly pivot along the journey.  As your product matures it will have different needs: characteristics of an early-stage product are quite different from those of a mature one. Understanding phases of product growth will help you set expectations for yours along the way and even hire the right people for that phase. Note that consumer businesses tend to proceed through these phases far more quickly than enterprise businesses; for example, Google Search achieved its scale in a few years, while Google Apps for Domains still continues to mature years later.
+A healthy product grows along an S-curve. Many products start with modest and shallow growth, then growth accelerates, followed by exponential growth until it reaches maximum growth, after which growth tapers down and reaches maturity, where there is little to no growth.  You should know where you are at any given time and monitor closely to be ready for phase shifts. 
+It is important to understand product and user growth in the context of the overall market. How many people are using your product? What is the total addressable market (TAM) of your product? How does the number of people using the product (Serviceable Addressable Market or SOM) compare with the TAM? How many potential users can you serve (your current Share of Market or SAM)? A healthy product requires a large SAM that is growing and not shrinking — otherwise, failure is inevitable. In a market that is still developing, timing the evolution of the product so you are growing along with demand is vital for success. This is often very hard to achieve, and many products fail because of timing.
+How do you know if you are growing at the “right” rate? It is valuable to benchmark your product with other products at the same stage. Knowing how fast similar products grew at the same level of market penetration can give you a sense of whether your product is special.
+In a product’s early stages, the number of installs, sign-ups or downloads of your product is typically very small, all the net growth is driven by new users, and there is no churn or resurrection yet. On the other end of the spectrum, when a healthy product reaches maturity and has a high degree of TAM penetration, churn cancels out resurrection and the number of active users stays steady with time. This steadiness implies that each of the old retained cohorts have flattened out. For anything in between these two extremes, growth depends on the balance between new users, resurrection (returning users) and churn (lost users). 
+    Early Phase: Incubation
+When a new product launches, it is difficult to know whether people will use it in a way that you envisioned. In fact, sometimes they will use it differently and surprise you with finding core value you may not anticipated.  For example, Wikipedia was started as a professionally written website with a feeder site that allowed regular users to create and collaborate on articles. By the end of the first year the intended website had only 9 articles, while the feeder had over 25,000, many of high quality. It turned out that regular people wanted to make their mark and were willing to spend a lot of their time making an encyclopedia collaboratively: a different target user group, a different value proposition and possibly the first emergence on new type of content that would transform the Internet – User Generated Content (or UGC). 
+Thus, your initial goal is to get the product adopted by a few thousand people who you have hypothesized will love it: it is better to have a few users who love a product than many who simply like it. For about a month after launch, many users will try the product for novelty; some will stick with it and become early adopters, while others will leave. Look to create a fan-base off the bat.
+During this phase, there is a scarcity of data, and what data you do have likely is not reliable or representative of the product’s long-term future. All monthly active users (MAUs) are new, and there is no churn or resurrection. [LT1]
+This changes in the second month. While there is still no resurrection, you are beginning to see churn from first-month users. In the third month, a balance between new users, churn and resurrection begins to emerge. Resurrection is small, and new users remain the largest factor, but churn has started to contribute significantly. Your month-over-month net user growth depends entirely on these early adopters finding value in the product. A positive Quick Ratio = (new users + resurrected users) / churned is a key metric to watch during this early growth. If a Quick Ratio is >1 the number of users is growing; conversely, if it is <1 the number of users is declining. 
+Early on, churn far exceeds resurrection; this gap gradually narrows as you improve usability and fit. This can be seen in the cohort retention curves leveling out. (Note: for a weak product, the curves will not flatten out and will eventually reach zero, whereas for a strong product, the curves will begin to rise back up due to resurrection.) [JJ2]The flattening of the retention curve indicates the product has achieved balance between churn and resurrection.
+What indicates a healthy young product?
+* Cohort retention is strong compared to similar products in the space that have similar levels of penetration.
+* There is a group of users that absolutely love the product, which is reflected in very high retention for that group. 
+    Growth Phase: Product-Market-Fit
+By the end of the Early phase, the product may be adopted by tens of thousands of people who are beginning to use it regularly. However, this does not necessarily indicate product-market fit. In the first phase, penetration with respect to the total addressable market was low and the product grew slowly. Now, growth accelerates (the size of the new cohorts increases) as you begin to achieve product-market fit. Something wonderful seems to be happening: users are finding value in the product and return to the product on their own accord.
+As the active retained population increases, new users become a smaller percentage of MAU. Slowly but surely, the product’s market penetration begins to increase. In older cohorts, retention stabilizes as balance between resurrection and churn is achieved, while in newer cohorts, churn continues to far exceed resurrection. Because older cohorts are a larger percentage of overall users, overall resurrection thus grows relative to churn (though resurrection is still smaller) and begins to contribute significantly to MAU. During this phase, the biggest contributor by far to overall active users is retained users.
+Quantitatively, to know you achieved the coveted PMF, you’ll have to look at other products in your space to compare, to see if you’re really there. For a social consumer product, you might look at metrics like DAU/MAU (is it 10 or 20% or higher?) or next day retention (20% or 30% or higher?) or you’ll find comparable apps in your area.
+What indicates a healthy product in this phase?
+* Older cohorts’ retention curves flatten and perhaps slightly improve.
+* New users account for a decreasing percentage of total users.
+* Overall churn remains higher than resurrection but is driven primarily by the newest cohorts.
+* Engagement metrics get stronger.
+
+    Hypergrowth Phase: Achieving Scale
+Many of the most successful consumer products ever built (including Facebook, Instagram, LinkedIn, Skype, WhatsApp, Amazon, Netflix, Uber and many others) have one thing in common: The Hyper Growth phase. During this phase, the one-month (D30) retention levels of newer cohorts begin to increase relative to those of the previous cohorts over the same time frame, thus improving the ratio of resurrection to churn. This typically begins when either 1) a certain level of penetration is reached with respect to the total addressable market or 2) the product becomes very well-known. In addition, older cohorts start to resurrect in greater numbers during this phase and churn begins to decrease. All users, new and old, find value from the product. 
+In this period, MAU grows dramatically as resurrection exceeds churn while the product continues adding new users, compounding growth. This may be the fastest year-over-year growth your product will ever experience. All engagement metrics, such as D5+/7 (percentage of people visiting at least 5 times a week), number of sessions, and MAU/DAU (daily active users) are strong, and the product has achieved both product-market fit and growth.
+What indicates a healthy product at the Hypergrowth phase?
+* Older cohorts’ retention curves improve.
+* Resurrection is greater than churn.
+* Engagement metrics are very strong.
+    Mature Phase: Maintenance
+After a successful Hyper Growth phase, the product enters the Mature phase, during which it reaches a high level of penetration with respect to the addressable market and has few users left to add. In this phase, the product is no longer growing. Every cohort, old and new, has reached a steady balance between resurrection and churn, and, at the cohort level, the sum of retained users is equal to the overall number of active users. Overall retained users are also a large percentage of overall active users during this phase, and resurrection and churn contribute to a smaller percentage of active users.
+Healthy products during the Mature phase
+* Resurrection and churn have balanced.
+* The number of new users is extremely small compared to the number of retained users.
+* Engagement metrics are retained at very high levels.
+The advantage of this phase is that it can provide a springboard for the next product. Because it has achieved scale, it can become top-of-funnel for new product ideas that can ultimately match and even supersede it. Consider Windows to Office – the scale of windows gave Office products a low-cost distribution channel to bootstrap initial user growth. 
+    The Next Act: Expanding Product Portfolios
+To continue to grow your product after hitting maturity, you must diversify your portfolio and increase your total addressable market. This could mean entering new markets, launching new products, etc.
+Ask yourself: Who will the next (millions of) users of the product be? Which countries could benefit from the product that are not using it now? What new features could make the product more valuable in those segments? You may need to rethink your approach to creating product-market fit in order to reach them.
+Growth of additional products or in new environments will again follow an S-curve: growing slowly at first, then accelerating, increasing rapidly and approaching an exponential growth rate, and ultimately reaching saturation. By diversifying, you overlap S-curves and allow for continued growth.
+For example, consider Netflix’s journey. The company started its streaming product in the United States in 2007 and went into its Hyper Growth phase in 2010. At this time, executives at Netflix had already started laying the infrastructure for international expansion, and the platform formally launched in other countries in late 2010. By the time U.S. growth hit maturity a few years later, the international business (which is itself a series of overlapping S-curves) was driving most of Netflix’s subscriber growth. Most businesses should, like Netflix, think proactively about product and vertical adjacencies while in the Growth phase of their primary products. Delaying the launch of a second act — or failing to launch one at all — will stunt your company’s growth.
+Mapping Your Fundamentals
+Now that you know where you are in the maturity of your product, it’s time to “metricate” how you are doing. As Peter Drucker said, “if you cannot measure, you cannot improve it.” This couldn’t be more trues about consumer products, but it is more complex than that. Not only do you need to measure, but you need to measure the right stuff, the measurements need to support (rather than conflict with) each other, and you need to have a method for introducing product changes in such a way that you can rapidly evaluate the impact of those changes on your overall goal. 
+You may not find the right metrics from the start, don’t be afraid to revise them if needed. But critically make sure that whichever metrics you pick are:
+* Simple
+* Measurable
+* Within your control
+* Substantive: represent the real usage of your product (closest to your core value and not “vanity”)
+    The NorthStar Metric
+Let start with the NorthStar Metric. Remember your core value proposition? Your choice of metric should be driven by the vision of your product and the mission of your company and reflect the core value you are delivering. It is a long-term metric, something that is central to everyone on your team, but at the same time it is measurable within any given time period and within your control to impact. A well designed NorthStar Metric will reflect the moment the customer gets the intended result from your product and it will quantify your core value (i.e. rides per week you take with Uber or number of answers to your questions for Quora). 
+    Output Metrics 
+While the entire team needs the NorthStar metric, individual teams may focus on specific outcomes. For instance, one team maybe focused on increasing Revenue, yet another focus on Engagement. All these metrics should support the NorthStar metric.  If any of the output metrics increase, the NorthStar metric should too. 
+Each one of the output metrics can tell us more than a simple up-and-to-the-right graph. We can decompose it into underlying metrics and better understand the quality of growth. Consider the MAU graph. It might show a healthy growth, but without understanding how that growth is being accomplished, we cannot assess its quality.  When we decompose MAU into its underlying segments, 
+
+      MAU(t) = new(t) + resurrected(t) - inactive(t) + retained(t)
+
+we can see better what is driving this growth – is it new users (which can be costly and difficult to maintain) or is it retention (meaning the product has a healthy body of users) or resurrection (which can point to usage patterns that are sporadic).  The moment your positive terms (New + Resurrected) become smaller than your negative terms (the number who churn or become inactive) then you stop growing, the MAU peaks, and the whole MAU derivative goes negative. This is the thing to watch for, because then it’s all flat or down from there.
+
+Reactivation (bringing back users) is hard to control unless your product has network effects (tagging, mentions, etc.). Email or mobile notifications tend not to produce long-lasting results and sometimes are even counterproductive. [JJ3]
+Looking at the output metric across different time cohorts can also help understand how the product is evolving over time.  
+
+While it is tempting to use output metrics such as Engagement or Revenue as the primary metrics for a product, it is important to remember that they are lagging indicators, so by the time you see them change direction it is often too late. To stay ahead of the game, we need more leading indicators and a conceptual model. 
+
+
+
+    Input Metrics 
+Input metrics are the leading indicators of product growth. The most important input metrics indicate whether users are successfully using your product. They should measure if users effectively onboard (‘messages sent’ is one of LinkedIn’s input metrics) and engage (example: responding to a post). Input metrics have a cause-and-effect relationship with the output metrics. Optimizing for growth in output metrics without a true understanding of the input metrics is the empty calories of growth. 
+    Metrics Hierarchy
+Metrics can nest down from the NorthStar output to team-level input (metrics that individual teams use to guide their work). Going from one to hundreds in larger products. You can see how they ladder-up in case of LinkedIn and Spotify examples. It is critically important that they connect with each other and this connection is constantly monitored, otherwise tweaking these metrics can cause unproductive churn (more on that in Tradeoff section).  
+LinkedIn has a three-layer hierarchy. Such hierarchy can be organized with various metrics relevant to your mission: 
+* NorthStar (output): Metric that best supports mission/vision. MAU, WAU are common, but it also can be quite different, for example, if you are eBay and your mission is to “to be the world’s favorite destination for discovering great value and unique selection” you may choose gross merchandize numbers as your NorthStar. If you are WhatsApp and your mission is “to let people communicate anywhere in the world without barriers” your top NorthStar metric may be the total number of messages sent. 
+
+* Core metrics (output): Engagement (sessions), financial (LTV, CAC or revenue), and share (network strength) metrics can all be core output metrics. These metrics should directly support your north star (i.e. to achieve your NorthStar, you would need to achieve these output metrics). But they are just as important. Facebook’s famous “7 friends in 10 days” is  an example of an output metric. 
+
+* Value metrics (input): To achieve an output you must understand what value the user received from taking an action that created such output (i.e. what drove FB users to friend 7 people so quickly?). Because these metrics are typically closely tied to the core user value props, they are leading indicators and should be good proxies for output metrics (i.e. if the input metrics are achieved, the output metric should reflect it – in other words they correlate). They also tend to be easier to influence and drive directly with product changes. But watch for misalignment: it is possible that the correlation you have hypothesized between an input and output metric was wrong; it’s important to closely monitor and revisit as needed.
+
+* Team level metrics (input): Finally, there are the team-level drivers that are much more granular. They should still role up to one or more value metric. Teams typically set low-level targets for individual features; the key is ensuring those targets actually contribute to the value metrics.
+
+It is important to verify your model – you may have created a lot of interesting metrics, but if they don’t all add up to drive your NorthStar, then they will create no – or worse, negative – impact. Remember that picking the right metric depends on proving your hypothesis [JJ4]about it, so after you’ve found the model what works for you, try and A/B test it (another way to validate it is via Logistic Regression2). Do something that prioritizes the input variable and increases it, possibly at the expense of something else. See if those users are more successful as a result. If you see a big difference in your success metric, then you’re on to something. If not, then maybe it’s not a very good model. 
+    Tradeoff metrics
+Since no metric exists in isolation, a positive change in one metric may have an unintended downstream impact on another. Consider the example of monetizing a newsfeed - one approach might be to add more ads spots in the feed. While this may boost revenue in the short term, it comes at the risk of decreased long-term engagement and/or retention. Facebook for instance, in its early days set one of their output metrics to be “time spent,” which meant every team optimized to grow that metrics, often to the detriment of user value.
+Identifying relationships between core metrics can help surface those implicit tradeoffs and allow for a more deliberate tradeoff decision - one that finds a healthy balance between opposing metrics. The hierarchy helps take those tradeoff decisions from local to global optimizations. Identify your key tradeoff metrics and then monitor them for unintended changes.
+Consider counter metrics as well, as metrics can be easily gamed. And change them if they are not working.
+    Other Metrics and How to Use
+  Value: Benefit Metrics
+To start your journey, throw out all the standard metrics (conversion rates, pageviews, etc.) and just focus on one thing: 
+       What are your customers measuring?
+By looking at how they define value, you get yourself aligned to them as closely as possible. Answering this question sets your product up for value creation, which then unlocks the ability to gain something from that value.
+Everyone’s benefit-driven metrics will be completely different because most people’s customers and value proposition and product are ultimately very different. There is no uniform standard.  For example, for marketplaces it is making sure customers get things cheaply and quickly and are happy with their purchase. Thus, you want to measure the quantity of how much sellers take home, and how many buyers are happy with their experiences. Contrast this with overfocusing on listing fee revenues, which might get you into a spiral of raising prices rather than creating the best commerce experience.
+This contradiction is the reason you want to start on this metric early, from the very beginning, because before you know it, you might optimize so far down the revenue that you won’t have the DNA, energy, or willpower to execute in a user-value-focused direction. 
+  User Acquisition 
+No matter how great your product is, people need to learn about it. There are different types of approaches that drive different costs of user acquisition. The idea of paid, owned, earned and viral (network driven) user acquisition has been around for quite some time. Relying too heavily on one marketing stream can leave you vulnerable should an unexpected change reduce its output, so it is important to get a balance of sources.
+* Paid media is the simplest to activate, consisting of any marketing that you pay for. There are a few subcategories. Pay Per Click (PPC) across social media and Search Engine Marketing (SEM) are some of the most common forms. But it can also span PR/publicity, paid email marketing, contests, affiliate programs, display ads. 
+* Owned media consists of the content you create and publish on a channel you own. This includes your website and blog, any eBooks and white papers you publish, and the content you distribute on your social media channels. Integration into other apps and cross-app references can be another source of owned traffic. Using your own at-scale property to bootstrap acquisition to a new one can be a part of this channel. 
+
+* Earned media consists of all the content and conversation around your brand or product that has been created by somebody else and published somewhere other than your owned channels. Search Engine Optimization (SEO) is the best recognized, but organic social media, review sites, earned PR, blogs, can all contribute to the overall volume.
+
+* Viral acquisition is the most powerful and effective and relies heavily on network effects inside the product itself. However, networks that are limited in size can limit overall reach of the app (i.e. if the current network is only for students of one college, you’d need to expand to more colleges, etc.). Some viral acquisition can be paid (i.e. invite a friend and get $5). In enterprise, to drive virality consider artifacts that people may share (documents, files, videos, etc.) that can increase the network size outside of the immediate team or organization. Viral acquisition is by far the most lucrative as it represents compound growth in users. Understanding and managing viral loops is critically important for that reason (please see more in the Loops section). [JJ5]
+
+A typical product will have a blended approach to acquisition with some channels being more dominant than others. For instance, for a product like eBay, SEO and SEM, can be key contributors to their funnel because most people will search of a product first.  Over time this could change as the product gains brand recognition/awareness and more people go to it directly for their needs. Even viral products often require at least some amount of paid acquisition before they activate the viral loop. Monitoring and optimizing these channels is a continuous process and requires a robust toolset. Changing the channel mix will impact your CAC (more on that below).  
+  Engagement
+User engagement signals show that your users are realizing value from your product. A good way to measure the value customers gain is their use of key User Engagement Actions. If a user is consistently performing key User Engagement Actions, it is a good indication of engagement.
+Key User Engagement Actions are specific to each product, but to give some examples: for a Team Collaboration app you might measure Add Task, Complete Task, Invite Team Members; for an Online Billing app: you might track Create Invoice, Send Invoice, Receive Payments. If you can measure your User Engagement by tracking User Engagement Actions, and then use that data to A/B test and improve your user engagement, you are on a path to understanding the more general way to measure via DAU, WAU and MAU.
+DAU, WAU, MAU stand for Daily, Weekly, and Monthly Active Users – the unique number of users who are "active" within a given amount of time. DAU and MAU metrics have been used for years by websites and reflect the most basic way of measuring user engagement. The key lies in how you define "active" user. Is "user signed-in” enough to define a user as "active"? Perhaps it is better to measure a more valuable action like "Update a Task", "Invite Collaborator", "Share Content" etc. or Average Session Time and use Stickiness Metric (DAU/MAU).
+  Engagement: Stickiness 
+DAU/MAU [JJ6]is a popular metric for user engagement – it’s the ratio of your daily active users over your monthly active users, expressed as a percentage. Usually apps over 20% are said to be good, and 50%+ is world class. Popularized by Facebook, this metric is particularly useful for high-addiction social apps or communication apps. However, it is not an end-all: plenty if highly valuable apps have modest DAU/MAU because their core value is not directly aligned with high use frequency or the use is clustered (AirBnb, Uber).  It also can counter-correlate with long term retention.  
+  Engagement: Social Graph Density
+Graph density – or how many users are connected to each other in your product over how many connections are possible – is an important metric for viral products. Using combination of viral and non-viral acquisition you can grow graph density over time, and larger density will enable improved content relevance and app personalization, especially if you rely on concepts like feeds to drive engagement. A surprising fact however is that often 50% or more of users do not know anyone else in the service, meaning that you need to backfill their feed with a bunch of content just from one person, or worse yet, impersonal content. In fact, one of the most explosively viral products in recently history had a full 65% of their users disconnected from anyone else: Instagram.
+  Engagement: Power Users
+Power users — people who love your product, are highly engaged, and contribute a ton of value to the network – drive some of the most successful companies. To measure power users, we use “Power User Curve” — or “D30” – a graph you have seen before. It’s a histogram of users’ engagement by the total number of days they were active in a month, from 1 day out of the month to all 30 (or 28, or 31) days. While typically reflecting top-level activity like app opens or logins, it can be customized for whatever action you decide is important to measure for your product. The curve can be used with any engagement (posting content, logins, messages, purchases) to help diagnose how top users are getting value from the service.  
+A strong product will have a “smiling” power user curve, which means that over time, the platform is able to retain and grow its power users. Successive Power User Curves should ideally show users shifting over more to the right side of the smile. As the density of the network grows, and the stronger network effects increase, it’s expected that there’s more reason for users to return on a daily basis. Some products benefit from weekly, not monthly, analysis. An D7 (rather than D30) power user curve. This curve can highlight how the product is used differently amongst different groups or if there are weekly activities that make it more useful. 
+If the power user curve trails off, it signals that the monetization strategy and user value must come early in the engagement lifecycle or create more value for each of the few users that are remaining. When there’s low engagement, what matters is that the company provides value early on and aligns their business model to when users are engaged. It also may point to the fact that something about the product — e.g. onboarding, the core experience, etc. — where a significant chunk of the user base isn’t experiencing the ‘aha moment’ that makes them “get” the product, and therefore not getting value from it right now (and if so how to get there).
+Plotting the Power User Curve for different WAU or MAU cohorts can also be very insightful. Over time, you can see if more of your user base are becoming power users, by seeing the shift towards higher-frequency engagement. You can watch for when the line starts to inflect in order to see when a critical product release or marketing effort might have started to bend the curve.  This might be a place to double down, to increase engagement. For a network effects product, you might expect to see newer cohorts gradually improve as you achieve network density/liquidity.
+Power User Curves show if your product is hitting a nerve among a super engaged core group of users, even if perhaps the overall blended DAU/MAU is low. It also doesn’t have to just reflect app opens or logins — you can hone-in on an action that maps closely to users getting specific value out of your specific product and plot the Power User Curve for that action. 
+  Retention
+As we described in the Power User Curve, D1, D7 and D30 retentions are calculated as the percentage (or total number) of users who are active at any time after 1 day, 7 days and 30 days of signing up or installing your app. 
+Classic retention, also known as Day N or Retention by Day, is the percent of new users who come back on a specific day.
+Range retention is similar to classic retention with a measurement period that spans multiple days. 
+Rolling, or return retention is the percent of new users who return on or after a specific day.[JJ7]
+
+Paid. A simple method to calculate retention amongst paid users is to find the percentage of users that have renewed the subscription, i.e. 
+       Retention Rate = (Number of renewed users / Total users) * 100 %
+
+A good way to retain users is to find ways to increase their engagement with the product. Another way is to help them discover value fast.
+Basic Retention Curve shows the percent of users that remain active after a period of time. Retention curve has two typical features:
+* It tends to drop off fast at the start.
+* The curve then (hopefully) tends to flatten out over time. If instead of flattening it hits hit zero, it’s a strong signal you urgently need to improve user engagement.
+Most new users are lost at the beginning, a short time after signup. For website and web-apps, typically 60-80% of new users are lost within the first week of signup. In mobile it can be 70-80% users lost after the first day. "Week 1 Retention (W1 or D7)" "has one of the biggest impacts on your retention over time" because improvements that you make in week 1 retention carry through the entire retention curve.
+If you can get more people to engage early with your product, that will have a ripple effect pulling the entire curve upwards (as shown in the arrow), so you'll keep more customers, and hence grow faster. 
+Improving this metric is all about figuring out how to quickly get new users to experience the core value of the product in that critical first week. And the more people you get to experience that core value really quickly the more those users will tend to engage and retain with your product.
+  Tripwire Metrics[SY8][JJ9]
+Typically, users don't ask for help, and tend to drift away if they don't get value quickly. If you can spot those users and reach out, you may be able to engage them. To help spot users who aren't engaged, you can use Tripwire Metrics to identify users who aren't engaging well and use that data to quickly act to engage them during those vital first 7 days.
+App Groove managed this and grew their retention by 10%. They noticed that users who engaged well (and were therefore significantly more likely to become paying customers) spent an average of 3 minutes and 18 seconds in the first session, and logged in an average of 4.4 times per day, whereas those who were not engaged (and unlikely to convert) only spent an average of 0.35 seconds on their first session and logged in 0.3 times/day. So, they set up an alert to spot these non-engaged users and would then reach out to those users to offer personalized help getting setup which resulted in those users becoming more engaged and 30% of those who responded would then convert to a customer.[JJ10]
+Instrumenting your product to signal ‘red flags’ before your customers do is critical to catching issues not only with new products but with product updates as well. 
+  Financial: CAC (Customer Acquisition Cost)
+Customer acquisition cost is one of the most critical metrics for sustainable growth – it shows exactly how much it costs to acquire new customers and how much value they bring to your business. When combined with LTV (below), this metric helps companies guarantee that their business model is viable.
+To calculate CAC, divide your total sales and marketing spend (including personnel) by the total number of new customers you added during that time. This is blended CAC (i.e. all channels – paid and unpaid and all new users – from all acquisition sources – are considered.) While a blended CAC (total acquisition cost / total new customers acquired[JJ11]) is useful to see the full picture, since it includes organic acquisition, it doesn’t show how well different paid campaigns are working. So, it’s also useful to track paid CAC (total acquisition cost / total new customers acquired through paid marketing). The latter is important to assess whether user acquisition can be scaled up profitably.
+Just as it is important to continually monitor your acquisition costs by paid customer acquisition channel, it is also important to consider segmented CAC, where you look across different customer segments (for instance, tier of product or power users vs. casual users). Looking at CAC by customer type can help guide decisions on prioritizing one customer type over the other or changing the channel strategy.
+In an ideal world of all organic growth, CAC would be zero. More realistically though, an organic acquisition rate of 60% is typically a good indicator of product market fit.
+Months to recover CAC. Generally, a company must recover its customer acquisition costs within a year (many successful SaaS companies are able to recover CAC in five to seven months). However, for many early-stage companies, the payback period commonly goes beyond 12 months. A reduction in the payback period over time is one of the best indicators of growth for such companies. 
+The importance of this metric cannot be underestimated. [JJ12]The payback period provides some critical insights into the company’s capital and acquisition efficiency. In other words, the metric indicates how efficiently a company spends its money to attract new customers and how well it can sustain its acquisition strategies in the long term.
+A long CAC payback period is generally an indicator that a company needs to improve its acquisition efficiency. Commonly, there are two key areas for improvement: customer acquisition cost and customer monetization. Problems with customer monetization indicate that the company is experiencing difficulty with translating its acquisition strategies into actual profits. Frequently, companies that face problems with customer monetization try changing the pricing plans offered to customers.
+To calculate this metric, divide CAC by the product of monthly-recurring revenue (MRR) and your gross margin (gross revenue - cost of sales). If your business is non-recurring, substitute ARPA (Average Revenue Per Account) for MRR. 
+
+       Months to Recover CAC = CAC / MRR x GM 
+       
+A short payback period can offer up your business two golden tickets:
+* Smaller working capital needs
+* Faster growth
+A lower CAC Payback Period equals more free cash, which can lead to a more significant impact on company growth, because you can use it to acquire more customers. The effect will compound over time, reinforcing growth. 
+
+
+
+
+
+
+
+
+
+  Financial: LTV (Lifetime Value)
+Customer lifetime value represents the value a customer will derive from the product over the duration of their engagement with it. For the business, it is the total worth of a customer over the whole period of the relationship. 
+It’s an important metric because:
+* It costs less to keep existing customers than it does to acquire new ones, so increasing the value of your existing customers is a great way to drive growth. 
+* It helps optimize acquisition spend for maximum value rather than minimum cost (i.e., acquiring a lot of customers and doing so as cheaply as you can, if only to lose them).
+* It is  a great way to understand how different customers fit into the core of your business. Your best customers will typically represent a significant amount of your revenue and you’ll want to differentiate the experience of those high-value customers.
+For consumer businesses, the fundamental calculus is about making LTV higher than CAC. CAC is lowered by reducing friction in the product and finding ways to bootstrap the product either by using an existing funnel, leveraging a partnership, and eventually establishing own funnels. On the other hand, the stickier the product is and the more engagement it generates, the higher LTV is. Over time as the product scales, network effects also kick in to drive down CAC and drive up LTV. Success then is predicated on LTV exceeding CAC. Using these financial metrics as a compass allows charting a path to growth, allowing teams to prioritize the most impactful work. You will want to benchmark your time to recover CAC against other companies or products in your area, but a general rule to use is:
+
+LTC > 3CAC
+Months to Recover CAC < 12 
+
+Ultimately, you don’t need to get bogged down in complex calculations – you just need to be mindful of the value that a customer provides over their lifetime relationship with you. By understanding the customer experience and measuring feedback at all key touchpoints, you can start to understand the key drivers of CLV (more of that in Product section).
+
+  Financial: ARPU (Average Revenue Per User)
+ARPU is measured as the total revenue divided by the number of users for a specific time period [JJ13](typically a year but can be calculated over a month or a week, etc.). This metric demonstrates the value a user on the platform, regardless of whether they purchase subscriptions or click on ads. 
+ARPU is a good indication of the quality of revenue the product is generating from customers. It can be a good benchmarking tools against competitive products, and in early stages of the product, it can be helpful to compare with known ARPUs for established players in the market.
+ARPU is also a good customer segmentation tool and a way to help optimize pricing. It’s a great way to evaluate acquisition channels, ensuring you’re prioritizing ones with the highest ROI. It can also be a good potential indicator for the financial viability of the business (a low ARPU in a small market may be a warning sign while a high ARPU in a large market could indicate an opportunity for revenue growth).
+The primary goals of customer success function are to retain the customer and grow them. Hence, your ARPU must increase over time if your customer success team is working at its best. 
+  Financial: Ad metrics
+Getting ads right is a balancing act across reach and relevance. To do this well requires continually monitoring ads effectiveness and adjusting campaigns to be maximally efficient.
+Impressions is the metric that tracks the number of times the ad appeared in paid search ads or was displayed on a third-party site. While it's not a good measure of reach (it doesn't indicate that the user saw the ad), it could be a good indicator of brand awareness.
+Click through rate (CTR) is the ratio of clicks to impressions. Or more simply, the number of users that clicked on the ad. This metric is a good indicator of whether the content is resonating with the audience, and it's typically used to weigh the efficiency of the ad. CTR isn't always strongly correlated to conversion rate, as users may see an ad but navigate to the website on their own. One way to mitigate this, is so also monitor the view-through rate.
+Conversion rate (CVR) is arguably the most important metric to track, as it is the strongest indicator of the effectiveness of an ad. A key challenge is that similar to click-through rate, users may not immediately act on the ad, and even if they do, they may find their own way to the product. This is where taking view-through into account can help. It is also important to track conversion rates by channel to determine the best match of channel to the purpose of the campaign. Take for instance, the fact that the average conversion rate across Google ads is 4.4% on the search network and .57% on the display network. Search works well to get in front of users when they’re actively seeking a solution that your product could address, while display ads can be a powerful tool to create band awareness.
+Cost per click (CPC) is one of the universal metrics that measures how much you pay when someone clicks on your ad. The higher the click-through-rate, the lower the cost per click. In other words, the more relevant an ad is, the less it costs to run it. Many ad platforms (like Facebook) will stop delivering ads with lower relevance scores, since repeatedly showing users irrelevant ads may drive them off of their platforms.
+Cost per acquisition (CPA) is what it costs a secure a paying customer or conversion. The CPA ties directly into the ROI of the campaign or channel and is used to determine the ROI on ad spend.[LT14] It is an important metric to understand campaign/channel effectiveness and to ensure you’re allocating spend across multiple campaigns/channels in the most effective way possible.
+    Managing by the numbers: OKRs to Metrics
+If your team uses OKR framework, you can interlock OKRs with your metrics and nest them the same way as you would with your metric ladder. Looking at the classic OKR example that John Doerr used with his early startups, including Google, we can make metrics to the objectives. 
+
+While OKRs are set to be aspirational, qualitative, and ambitious, the corresponding metrics would be achievable, quantitative and real. They will help us understand the underlying mechanics of driving those OKRs and the reality of how we are measuring up against said objectives. 
+
+    Putting it all together: From Funnels to Loops
+As you have probably noticed – the metrics we discussed closely reflect the journey of the user, from them first finding out about our product all the way to monetization. There are several conceptual models available, each with their own advantages that can be used for different purposes. Over the years you have probably worked with funnels. The Pirate Funnel is famous one (AARRR stands for Awareness, Acquisition, Activation, Retention, Referral, Revenue) and is useful in identifying and isolating specific trouble spots in the customer journey. 
+Funnels are extremely useful and have brought a lot of revenues to many businesses, so please use them. However, the funnel framework has some shortcomings: the reality of funnel is that you need continuous activities and investment of resources at the top, which reduces your CAC. Every cohort on top of the funnel flows down and converts independently of past cohorts. Your high ad spends of last month will not fill the top of the funnel this month by itself. In other words, there is no compounding effect.
+Compare this to a growth loop that feeds the output of a cycle back to the input. Every cycle grows on top of all past cycles and growth compounds. Understanding these loops is the key to the problem of predicting where your engagement graph is going to go over time. 
+Let’s take a look at two loops that feed our MAU: Acquisition and Retention loops. 
+* Acquisition loops power the positive term for New
+* Engagement loops power the negative terms of Reactivation and Inactive
+Understanding these underlying loops is the key to the whole problem of predicting where a MAU graph is going to go.
+
+
+
+  Acquisition Loop
+The key to mastering the Acquisition Loop is understanding how a cohort of new users leads to another set of new users. If you can get that going, then by a conceptual proof by induction, you’ll be able to show how it scales. Importantly, these loops are flows within the product that are created on top of pre-existing, large platforms. They can be bought (via Ads), integrated (via APIs), but also organically built (via product network effects). 
+There are a few different ways to create acquisition loops. Products like Yelp, Houzz, Wikipedia, Glassdoor, Reddit, are UGC SEO driven (i.e. they leverage content generated by users from the previous cohort, which gets indexed by the search engines and then found by the next cohort of users: new users find content through Google, a small % of them generate more content, which then gets indexed by Google, and then the loop repeats). Paid marketing: spend money, sell products, take the money and buy more ads, keep going, can be thought as a loop, but not one that provides compound growth (it is more of a funnel). Viral loops are extremely scalable, free, and don’t require a formal partnership. This is based on users directly or indirectly sharing a product with their friends/colleagues, and having that loop repeat itself. Some of the fastest growing companies – like Instagram, LinkedIn, TikTok – benefit from viral loops. Loops can be combined, but it is important to find at least one that works with a net-positive compound effect. 
+Once conceived, we can measure and optimize a loop. As we have seen, while linear marketing is helpful, it will never achieve the same compound growth as viral. As a result, you now have a framework to understand if your growth will scale over time or not. If it’s a one-time launch, like a big PR effort or a strategic partnership… well that’s not really a loop! On the other hand, if users are telling each other as part of the native functionality of the product –then you will want to pay attention. 
+Once you understand the loop, you must understand if there’s upside. Is it possible to improve the loop? Maybe it sucks now, but maybe it can be fixed? Or even better, maybe there’s a product growing like gangbusters, but you could accelerate even further. To understand this, you have to understand how product experiences drive user behavior and increase stickiness and virality of your loop. We will discuss this in the Product Making section. 
+  Acquisition Loop KPIs
+Once you understand the upside, what KPIs do you look at, and what are you looking for? The first thing to ask for is the product’s Acquisition Mix. Lo[JJ15]ok at signups broken down by channels (i.e. SEO, organic, partner)/loops and by time period (ideally weeks). Look for signals that the dominant channel(s) are proprietary and repeatable. Ideally, they are loops. A good mix might be 33/33/33 where you have a third organic, plus two loops, like viral and SEO. The red flags are around new channels appearing, which aren’t sustainable. Especially ad spend that comes and goes.
+It’s also important to understand the quality of a signup. You should care about how signups translate into paying customers, or active users; don’t worry about quantity of signups themselves. One of the biggest determinants of “quality” of new users is the source of the user. As a result, you want to understand both how signups are being generated by various channels, via the Acquisition Mix report, but also get a sense of the quality by understanding the Activation Rate by channel. The red flags here are a bunch of new users from a new channel that’s low quality/conversion, which would signal that MAU growth will wither down as these users don’t stick. 
+Loops are usually built on top of another platform. Sometimes that’s Google SEO, email systems, Instagram, or your own existing at-scale product. Preferably, you want low platform risk, where there isn’t a dependency on a larger company that might change their mind. If the new product adds value to the underlying platform, and isn’t too horizontal, it might be stable. There might be a strategy to become a destination product in itself. The red flags here are focused on the integrations between the growing product and its platform. For example, if it’s built on iOS and one of the core integrations is push notifications, then look at the clickthrough rate trend for the notifications. If it’s decreasing over time, then you know it’s not working. It’s important to understand the underlying platform of any acquisition loop because things can collapse quickly. One cautionary tale is what happened with Branchout, which was trying to build a LinkedIn on top of Facebook Platform. It grew fast only to collapse to 1/10 the size just 4 months later. 
+Most of the successful businesses build more than one growth loops to drive acquisition. The success of your business should not depend on just one acquisition growth loop.
+  Engagement Loop
+If you wonder "how to increase user engagement?" then engagement loop is the answer. An engagement loop is an experience that helps a user to progressively unlock the product's value, keeps them engaged, and in effect, reduces churn. If you have a network-based product, like Dropbox or Slack, then you need active users to engage each other over time. If it’s purely a utility, then you want engagement in one time period to help set up engagement in a future time period.
+In an engagement loop that’s based on social feedback, you get a game of ping pong. One user messages/follows/mentions another, and they draw them back. And then that user might do the same and draw in a different user. And this repeat. This is why network density and easy content creation is so important- you need ways to bring people back into the network.
+On the other hand, there are engagement loops that are more like planting seeds via personalized content. If you sign up for Zillow and put in your home address, and favorite a couple new real estate listings, then Zillow will start re-engaging you with personalized emails. Sometimes it’ll be when your house goes up in value, other times it’ll be when new listings show up in your neighborhoods. Credit Karma does the same, where a single setup session leads to important notifications about credit score changes over time.
+As you can see, a key important factor in the success of an engagement loop is the progressive delivery of value. If you cannot deliver value, no amount of notifications, emails, and updates will retain users. Highly engaged users are less likely to churn. How do we measure that?
+
+
+
+  Engagement Loop KPIs
+As we discussed, we want to see improving retention in cohorts over time. To do so, we need understand conceptually why the user cohorts are being brought back – is there value being created at each visit that makes the product more sticky over time? Are they building a network? We want to understand the classic D1/D7/D30 metrics – and also look at the month to month numbers. There are a couple key things to watch for: The cohort curves need to flatten. Ideally >20%, so that each signup activates into a sticky, active user over time. If only 5% of users stick, then you’d have to sign up 2B users to get 100M MAUs3. Not tenable. 
+One of the key tools for the engagement loop is the use of notifications – whether that’s email, push notifications, or some other on-platform channel. They are easy to be abused. To detect artificial engagement, look at notifications by trigger, by channel and the volume and CTRs over time. Notifications show engagement that’s already there.[JJ16]
+Another set of metrics we want to understand on user engagement is frequency of use. Almost every successful product has a “ladder of engagement” where you come for one use case, but ultimately become stickier and higher frequency by adding use cases. For Uber, riders would often do their first trip because of travel use cases, like getting to the airport – this is a 2 trips/year activity. Then they’d layer on “going out” – like dinners on the weekend, which might be 1 trip/week. And eventually, add a number of other use cases until they got to commuting, which could be 2 trips/day. Look at a frequency diagram to segment high- and low- frequency segments and start digging into their usage of the product. 
+There are two other key metrics that indicate the quality of user engagement and loops: Viral Coefficient and Viral Time.
+
+
+  Viral Coefficient
+The viral coefficient is the number of new users an active user brings to your product. For the loop to work this coefficient must be greater > 1 and the higher the better. When the viral coefficient is higher than one, even a slight increase in its value can result in multiple-fold growth.
+The viral coefficient has two elements: the number of shares and the conversion rate.
+You can improve both to some extent by engineering product features and designing a growth loop around customer behavior. To calculate the viral coefficient:
+* The number of users (N): From your user database, find out the total number of registered users. Depending on the nature of your growth loop, you can either consider only paid users or the total number of users (paid plus free).
+* The average number of shares (S): Using tools like UTM links, third-party link/traffic tracking software or a customized solution, determine the number of shares (i.e., invites/referrals/shares) each user sends out to her network.
+* Conversion Rate (R): Using the same link-traffic tracking system, determine the percentage of prospects who signs up out of all those who received the invite.
+* Viral coefficient = Average number of shares per user * Conversion rate.
+* For example, say you have ten users with each user sending out five invites. If the conversion rate is 30% then, the viral coefficient will be 1.5 (5 x 30%)
+  Viral Cycle Time 
+Viral Cycle Time (CT) is the time between a user sending an invite and someone becoming a user using that invite and send at least one referral herself. A shorter cycle time means the company is acquiring new users in less time; hence its growth will be faster.
+It is evident by evaluating the user growth formula (note we are ignoring churn for simplicity) that when the viral coefficient is higher than one, you should focus more on reducing  cycle time than increasing the viral coefficient of a viral loop. By reducing cycle time, you are increasing the compounding effect.  Just consider that for 
+K=1.2, 
+Users (0) = 10, and 
+t = 60, 
+the end number of users with CT=1 vs. CT=50 will have a difference of 3380776 users! 
+Shortening the cycle time has a far bigger impact than changing the viral coefficient!
+Methods for Making[LT17]
+    Mindset
+Growing a product requires a growth mindset. You are trying to attract a lot of people to your product and make them keep using it over a dozen alternatives. You will face a lot of rejections and a lot of failures. This level of resilience on the path to success is not something most of us are used to in personal lives. Hence our brains have never developed the required neural muscle.
+You will need to figure out things that matter, focus all your energy on them, and ignore the things that are vanity. You will need the grit to take on new challenges and perseverance to stay put till you win. You will need to remain in control under emotional turmoil caused by the loss of resources due to failed initiatives. You will need conviction in what you’re building and at the same time be open to be proven that your hypothesis is wrong.
+The process of building product is an iterative process of running experiments, a loop. You start with an idea, implement it, test, and fine-tune it. Incremental improvements will evolve your growth loops into a lean growth machine.
+
+    What Makes a Product Great?
+As a team you will need to have a shared definition of what makes great products, but to give you a starting point here are some attributes that are fairly universal from Jeff Weiner:
+* Deliver on a singular value proposition in a world-class way
+* Simple, intuitive, and anticipates needs
+* Exceeds expectations
+* Emotionally resonates
+* Changes the user's life for the better
+In the beginning we spent time on the core value proposition and your target user persona, here we will talk about how to continually ensure that you are meeting their needs. We will start with the least tangible property: an emotional connection. 
+
+    Ethos, Taste, Style and Emotion
+Interaction with any product produces an experience, whether it has UX design or not. This experience is at the heart of how your users feel, sometimes entirely subconsciously.  This emotion will determine if your user’s experience is positive or negative. This applies as much to the emotions towards products as to those we experience in social encounters: products elicit feelings that are good and/or feelings that are bad. From the very first moment that you are conceiving of your product you need to be intentional about the emotion you intend to invoke with it. 
+Crafting emotional responses maybe not the top of mind for a productivity-oriented product, but it is none the less important. Understanding and designing what users will associate your product with and what feelings your product will evoke will drive user awareness, adoption, retention and even network effect amongst your users.  Different type of design will help you map user emotion and design the product reflective of your goals. 
+There are 8 primary emotions. Joy, Surprise, and Trust for a good experience — and an element of remembrance that builds a long-term relationship with the user. Anger, Fear, Sadness, Disgust, and Anticipation reflect a bad experience. We mostly feel this when the expectations on the product are not met. This can end up in the user not coming back or have a negative emotional connection to the product.  Also note that to compensate for a bad experience you need not one, but five(!) good ones. 
+Design Research can help you understand how your product is perceived by the customer. To help guide you in the product design process:
+* Use your core value proposition and your target user persona to define your core use case and a design theme (for example: children learning at home on their own). 
+* Flesh out the user profile. Because the amount of functionality you can implement is infinite, the challenge is not to aim for completeness, but for a concise profile that is both relevant and inspiring. The profile includes general life concerns, concerns in the usage situation, and concerns given the product design (for example: life concern can be “I want my child to have the best education”, usage concern can be “I want my child to enjoy school”, and product design concern can be “I want my child to be safe while learning online”). Key questions in formulating concerns given the situation, are: what do the users expect from themselves in the usage situation; what are their usage standards? What do they want to accomplish in the usage situation; what are their goals? What are the activities and interactions they enjoy in the usage situation; what are their usage sensitivities?
+* Create a product profile that represent the designer’s vision that aligns with the concern profile – specifying three qualities: the product’s significance, intentions, and character. Significance represents the key consequences that we want to design for; e.g., I am confident (because my child is getting a good education). The intentions of the product are defined by the purpose it will be designed to have (such as the product enables me to monitor my child’s progress) and the interaction personality with which it fulfills this purpose (such as, the product invites me). The character represents the product’s appearance, such as, the product is friendly, delicate, or natural. The product profile is used to formulate a product statement encapsulating this emotional value (for example, a friendly product that makes me feel confident that my child is getting a good education by inviting me to easily monitor my child’s progress). The concern profile and product profile can be used as a reference in all stages of the design process in order to safeguard the emotional fittingness of the final design.
+* Design the product that fits with the product statement. Your design team will match design elements to reflect the user and product profile. There are many formats like “From the point of view of the user: “I am (persona) trying to (verb), but (barrier) because (cause) which makes me feel (emotional reaction).” But the most important part is finding empathy with the user to get this right. 
+* Test with users. You want to make sure that the final design outcome matched your intent. 
+
+    The Hierarchy of Engagement
+Building products that endure is not about just growing DAU/MAU, it is growing meaningful engagement with the product. As Sarah Tavel explains in her Hierarchy of Engagement, it starts with growing the completion of a core action that’s most highly correlated with core value proposition and retention. And then creating a set of virtuous loops that leverage the engagement of that strong base of sticky users to drive organic growth.
+
+Each product will support a myriad of user actions, the key is identifying the most important ones. Core actions are actions that form the foundation of the product, and when done right are meaningful indicators of user value i.e., when the user performs those actions, they are receiving some value from the product. As such, core actions tend to be the most correlated with retention. For instance, for Pinterest the core action is pinning, while for Facebook it is friending. Core actions alone, of course, would not be sufficient to deliver on the value props for the entire product. However, all other features/actions in the product are in support of those core actions.
+With a base of engaged users, the next step is to create stickiness with the product. There are two ways to optimize for retention – the first is to create accruing benefits where the longer the product is used, the more value users get from their engagement; the second is to build in mounting losses where the longer users use the product, the more it becomes something they depend on or maybe even a part of their identity. Personalization is a great way to create accruing benefits, the more you watch videos on YouTube or movies on Netflix, the better the recommendations you receive. On the other hand, the more you’ve invested in building your professional network on LinkedIn, the harder it is to move elsewhere.
+With this strong set of engaged and sticky users, you can channel their engagement to drive organic and self-perpetuating growth by creating virtuous loops. These loops leverage existing user engagement to acquire new users or drive great engagement or re-engagement of your existing user base. The strongest loop is a network effect where each user’s experience gets richer and they derive more value from the product, as more users complete the core action.
+
+    The Magic Moment and the Tipping Point
+Retention is the best indicator of whether your product is valuable and whether you have product-market fit — because it tells you whether people who tried your product liked it enough to return and use it again. Generally, the first day or week after sign-up is critical for a new group of users. Do they have enough content to consume? Do they have a few close friends to chat with? Do they have a mental model of what the product is so they can find what they are looking for?
+To enable healthy retention and build a successful product, you must have a core set of users who love and embrace and care deeply about the product. When you are starting out, always build your product for this set of users, focusing on the use case that matters most to them. This involves both creating a “magical moment” in which users first “get” the product core value proposition and identifying the tipping point that establishes user retention.
+For Facebook, the magical moment is when a new user sees the face of a friend for the first time. For WhatsApp, it’s the first message a person receives. For PayPal a successful transaction. For Amazon, it could be when a buyer receives their first purchase or has their first interaction with the customer service team.
+Once you have created the magical moment, study how users are retained. The retention tipping point is different for different products; in Facebook’s case, it was connecting to seven friends in 10 days. The most frequent users of any particularly valuable feature are your super users: they watch the most videos, share the most content, create the most messages, etc. 
+Once you’ve identified these users, examine their prior behavior. What features did they use early on? Did they encounter the magical moment a certain number of times before they reached a “tipping point” and became truly hooked on the product? 
+Early on, you should focus on building a product that will delight super users. Then, once you have identified their key behaviors and engagement tipping points, you should use those insights to create a playbook for motivating less-engaged users to behave similarly, which will ultimately drive better retention. For your product to grow sustainably, you need to identify both its magical moment and its retention tipping point.
+
+    Experimentation, Testing and Iteration
+Some of the world’s greatest consumer products are built on the foundations of a data-informed culture. Take Amazon and Facebook as examples, both companies have a strong “test and learn” culture where they use data to help drive product decisions. Analytics is invaluable not only for “counting numbers” and building dashboards, but for helping define goals, roadmaps and strategies.
+“Our success at Amazon is a function of how many experiments we do per year, per month, per week, per day” — Jeff Bezos
+“One of the things I’m most proud of that is really key to our success is this testing framework … At any given point in time, there isn’t just one version of Facebook running. There are probably 10,000.” — Mark Zuckerberg
+With the increased focus on driving data-informed product decisions, companies generally focus on three outcomes that analytics helps drive.
+* Evaluate the health of the business by building dashboards/reports
+* Ship the right products and features using A/B testing
+* Set roadmap and strategy for the product by deep exploratory analysis
+These outcomes are achieved by defining key north star metrics and goals for products; creating a scalable data-informed organizational structure; and deeply understanding how to drive sustainable growth, retention, stickiness, engagement and monetization for products. 
+  Instrumentation
+At every stage, you need to capture data, analyze it, and take appropriate actions.  You cannot brute force yourself into guessing a growth loop design. This means your product needs to be instrumented at every layer to understand how it is being used, and this instrumentation must be automated to alert your engineers and product managers when something changes significantly as it can signal a break in the loop. 
+At the very basic level, you need to set up tools for:
+* Link and traffic tracking: To track traffic and conversions
+* A/B testing: To test different versions in parallel
+* Deep linking: To take prospects at specific pages
+* Marketing Automation: To handhold users based on their behavior
+* Cohort Analysis: To understand behavior sensitivity
+You will need analytics for each of the above. And you will want to empower all of your engineers. Product managers and designers to run experiments daily. 
+If your product is a mobile app, here is a read by Kevin Bravo to build a tech stack.
+  Project Management
+You and your team will come up with a lot of ideas, design various experiments, and get a lot of results. You have to properly document all these points so that at the end of every iteration, you have a clear view of what has worked and what has not.
+Your project management stack must include at the minimum:
+* A metric hierarchy to track all metrics from North Star to Team by cohort and over time. 
+* A single repository of quantitative sheets, research surveys, ideation docs, and presentations. 
+* A single source of experiments and outcomes. Should contain details of all experiments along with their results (success/failed) as well as notes on learning. Every time you decide to work upon an idea, add it to this excel sheet. After it is executed, note down its result, the learning, and the name of the team member driving the experiment. So in all, you will have four columns.
+* A Work Board for task pipeline and status. 
+  Audience/User Research
+You want to know two things:
+* What is important for your active users?
+* What are their invisible behavioral and emotional triggers?
+For example, Zoom discovered that, on average, a video conference meeting goes on for 45 minutes. So to convert free users to paying ones, they capped the meetings hosted via free plans at 40 minutes.
+Such insights are very useful to design conversion triggers but are usually difficult to discover. You should actively survey your users and visitors as well as extract behavioral data from your tech stack.
+Based on this research, design conversion triggers for acquisition and engagement. A conversion trigger is something extremely compelling for the users and enable them to draw maximum value from the product.
+With each iteration you will gain deeper insights into the mind of your users. Use these insights to make conversion triggers more and more compelling.
+    Quality[LT18], Features and Papercuts
+Managing a product is a constant struggle between big features and “papercuts” (small points of friction in product flows). If uncontrolled, over time the number of papercuts can become overwhelming and the product can effectively become unmanageable. 
+Papercuts are particularly insidious in that product makers (and even experienced users) become so accustomed to ignoring or working around minor glitches that they can become practically invisible. As a result, they are often repeatedly overlooked in favor of bigger issues or new capabilities. The result, however, is that these subtle deficiencies add up in the total friction they introduce and can either deter new users or frustrate existing users enough to abandon the product.
+It is very important that you prioritize papercuts early in the product development process.
+* Measure your user-experience bugs and requests rates, including bug inflow, time-to-fix, won’t fix/working as designed metrics. 
+* Manage your automated test coverage rates – this should stay consistently high to ensure you don’t introduce regressions as your team scales.
+* Instrument the product to fully understand all of your user flows and monitor this instrumentation constantly. Create automation to alert your engineering teams when metrics change significantly or rapidly.
+* Closely monitor and triage user feedback and issues, particularly those that are repeatedly deprioritized because they have a “workaround”.
+Ubuntu, for example, kicked off The One Hundred Papercuts project in 2009 as a concerted effort to improve usability of the platform. The goal was to fix 100 “trivially fixable usability bugs” before the release of the next major version, and the tradition has continued since. By recruiting end users in the campaign, the papercuts were brought to light. And clearly defining paper cuts (below) created focus. The key characteristics of a papercut – 
+* bug, or an unintended problem occurring within an existing piece of software, 
+* the presence of which makes a computer more difficult or less pleasant to use, 
+* that is easy to fix (for Ubuntu this was bugs fixable by one person in one day),
+* that the average user would encounter
+    Engineering for Growth
+Now you are all set to go out in the market and win people's attention. To fuel growth, you need a channel plan with some element of automation to activate your growth loops. You can drive this traffic using content, affiliates, paid ads, widgets, and many other channels. But you need to build this as a bottoms-up forecast first. Then you can begin measuring and optimizing it as we described in the Metrics section. 
+To do so you have to iterate on the product to remove friction for users throughout. Removing friction for new users is the most efficient way to improve retention. Do this early! For most products, especially new ones, the curve is fairly steep for the first several days, weeks and months. Users churned during this period represent the vast majority of all churned users, so driving new user engagement (and thus retention) early on is especially valuable.
+To improve retention among new users, it is important to understand the sign-up (or acquisition) funnel. For example, how many people viewed an advertisement for the product, and on which channels? How many then clicked on that ad? How many then created an account, and how many were retained 7 days later? 24 days later? 84 days later?
+Note that engagement drives retention Because engaged users are less likely to churn, engagement metrics such DAU/MAU correlate with and drive retention. Similarly, slipping engagement metrics are leading indicators of problems with downstream retention. If engagement declines, act quickly to remedy the situation before retention is affected. Retention can be applied at a feature level The retention characteristics of your product may not mimic those of individual features. For example, a product might have excellent retention overall, while retention of its messaging and image-upload features is significantly lower. 
+Studying the drop-offs in users at each stage will help you understand the efficacy of your acquisition channels (paid and unpaid) and identify any problems in sign-up and onboarding flow. For example, a significant drop-off between sign-up and account confirmation suggests an issue with confirmation email delivery. As another example, when the team at Poncho, a weather chatbot, studied and revised the number of questions in their sign-up flow, their seven-day retention increased from 60 percent to 80 percent. To further isolate points of significant drop-off, filter your data by channel, device, etc. Removing these sources of friction helps new users arrive at the “magical moment” as quickly as possible, which will dramatically improve retention in this group.
+  Acquisition Loops
+To further optimize the acquisition loops, you have to decompose the loops we were looking at and actually get into the details of user experiences. Your users need to go through many steps just to sign up. They have to land on the app store page, then sign up. They have to mobile verify. They have to go to a certain screen on the product, then add something to their cart – hypothetically. And so on. Each step is friction. Each step drives down performance. We ought to be able to look at every single one of these steps and improve them further. 
+Let’s dive into one example: App downloads. On the app store screen there’s reviews. There’s a star rating. The bounce rate on the app store screen can often be very high, sometimes 50-80%. In 2016, the star rating on Uber’s rider app was low. 1.7 stars, in fact. 
+One fundamental issue was that only unhappy riders were rating the app. It’s a common best practice to ask a broad spectrum of users to rate your app, and the Uber app wasn’t doing that. The best practice was implemented and shipped: after a trip, regardless of what the rider rated their trip experience, it would ask the rider to rate the app. And very quickly, the 10s of millions of users who had happy, successful trips weighed in. Quickly things moved from 1.7 stars to over 4.7 stars, where it still sits today.
+Let’s look at another example: phone verification. It turns out, having people verify their numbers is a high friction step and oftentimes, there’s a 10-40% drop-off rate just on this screen. It might be because your phone number was entered incorrectly. Maybe you’re international – an important use case for travel-oriented apps like Uber. There’s a whole series of updates you can make to improve this step – from partnering with carriers, allowing a voice call to verify, and so on.
+Another example: landing pages. These landing pages – often the first experience of a new user – are super important because the bounce rates are often over 80%. That’s almost everyone! So there’s a playbook of common changes you can make – from removing friction, pre-filling fields, adding video, optimizing for everything being above the fold, etc.
+In short, you have to repeatedly optimize every step in your customer journey and remove friction. To so this, your app needs to be instrumented to understand the entire flow of your loop.
+  Engagement Loops
+In the same way we analyzed acquisition loops to understand upside, we can do so for engagement loops. The first step is to break down the loop into much smaller, more granular steps.
+Here, we’ve taken a Social Feedback loop that starts with a user creating content and publishing, to their friends (or others) viewing, adding comments, and then the notification back to the original user.
+Now let’s zoom in on a particular step: Creation (user creates content). The social feedback loop fundamentally is built on the content creation step. If it’s not easy, then it won’t work. It has to be an activity that a lot of users want to do. That’s why taking a photo, typing in a text, or hitting a heart are all so effective. They’re dead simple actions. For example, Pinterest has many examples where they’ve optimized content creation – or more specifically, more pinning/re-pinning per new signed up user. One method is to use the term “Save” as opposed to the wonkier term “Pin it.” Another is to up-sell the mobile app where it’s easy to interact. Education during onboarding helps too. All of these changes doubled the activation rate for new users, causing them to re-pin more, kicking off engagement loops for themselves and other users.
+Once you create content, then you need to circulate it within your network. One key aspect of every network is the density of connections (graph density). It’s important to build the number of connections up, but not at the expense of them being relevant. And there’s diminishing returns too. A decade+ into the social platform paradigm, there’s now a playbook for how to do this. Let’s cover some of these basics.
+An important way to build a social graph is to bootstrap on an existing network. For consumer products, that might be your phone’s address book or Facebook. Within the enterprise, it might be your colleagues’ emails in ActiveDirectory or GSuite or your work email. There’s tactics like asking people to “Find Friends” and to build “People You May Know” features to increase density. A red flag here are is explosive viral growth just based on inviting. It won’t last, and they’ll be low quality signups. Similarly, if the core activity is all inviting and friending and there’s no main activity, that’s not good either. 
+As a final examination of looking for upside in user engagement, it’s important think about an otherwise innocuous step - users trying to get back into your product, but they’ve logged out. Being logged out and failing password attempts can become a huge drag for established products with large audiences. It’s common for 50-75% of signed up users to actually be inactive – that is, the majority of your users will have tried the product but never get hooked. The problem is when those inactive users come back, perhaps because of a notification, and try to log back in. They often are locked, can’t remember their password, and become permanently inactive. The solution is manifold – first to treat this flow seriously, with KPIs and optimizations. There are tactical things, like integrating into iCloud keychain, logging in with other apps if you have a multi-app strategy, and so on.
+    Benchmarking
+To establish the approximate level of long-term retention for your application, set benchmarks based on similar products in your genre. 
+For example, a game developer might compare their product to other games of the same type. The table shows the difference in 30-day retention rates between several successful casual puzzle games (7–10 percent) versus well-known strategy games (more than 30 percent). A casual game that has 20+ percent D30 retention and a 35 percent D30/D1 ratio would be well ahead of top casual games such as Angry Birds. But a social or strategy game with the same metrics would be significantly behind the leaders in its genre.
+    Aligning Teams to Data
+Organizational structure plays an important role in the success of the product. The vision and mission of a could potentially drive the organizational structure of the team responsible for success of the product. By understanding how different parts of your organization are inter-related, we could construct a formula for the entire company. At Facebook the formula was: # users * Time Spent / # users * Revenue / Time Spent = Revenue. I.e. get everyone to join Facebook, keep them deeply engaged with the product and monetize every minute of time that they spend on site.
+This formula defined the focus for each team, the growth team would focus on the number of users, the engagement team on the time spent per user, and the ads team on dollars per time spent. In that way, every team had a clear Northstar metric that aligned to drive company-level outcomes. Under each of these core business units, you can have a number of small teams underneath each of which have their own formulas that align to drive the business-level outcomes. For example, under growth might be the Internationalization team that focus on growth in users overseas. Under internationalization, there could be a series of teams for each country each with their own set of metrics. This results in a set of ripple-down formulas that make it clear to everyone how their work connects to the business at large. In other words, your org hierarchy mirrors your metric hierarchy. This alignment around goals and metrics is the foundation of the bottoms up data-informed execution culture that separates the truly great companies from just the good.
+
+
+    Product Fundamentals Checklist[LT19][SY20]
+CategoryFundamentalDetailsStrategic Vision & StrategyDescribe how you define these and how you will measure success.Strategic Core value proposition & Target audienceDescribe the core unmet need and who we are solving it for.StrategicMetrics hierarchyHierarchy of metrics that maps the North Star to metrics individual teams are optimizing for.StrategicCompetitive advantageUnique differentiation relative to the market.
+Key metrics: Competitive analysis.GrowthAcquisitionDescribe your acquisition loops.
+Key metrics: User acquisition by channel over time, conversion rate by channelGrowthEngagementDescribe your engagement loops that create stickiness.
+Key metrics: MAU, MAU/DAU over time, time spent, power user curve (viral coefficient, viral time as trending)GrowthRetentionDescribe why users churn and how you’re counteracting that.
+Key metrics: Retention rate, D1-D7-D30-D365 by cohortBusinessFinancial indicatorsDescribe how you’re doing against key financial indicators for the product.
+Key metrics: CAC by channel, LTV trending, ARPU trendingBusinessBusiness modelDescribe your business model, show how well it’s working and were you see friction.
+Key metrics: User value, RevenueProductProduct plans & roadmapForward-looking view of product plans for the next 6mos-1year. Describe emergent behaviors you are observing.
+Key metrics: User behavior trendsProductProduct designDescribe the ethos of your product.
+Key metrics: User experience tests, NPSProductProduct qualityDescribe how do you measure and track quality issues, and the automation in place to proactively address issues.
+Key metrics: Bugs cohorts, fix velocity, aging, performance, test coverage.ProductProduct engineeringDescribe your engineering practices – release cadence and agility, experimentation practices, product instrumentation, etc.
+Key metrics: release cadence, A/B test velocity and volume, A/B test results, % instrumentation, % issues caught by instrumentation.ProductUser feedbackDescribe your customer feedback loop and how you’re measuring customer satisfaction and value realization.
+Key metrics: Product NPS, Transactional NPS
+
+
+References
+
+Product making
+27 UX Case Studies To Improve Your Product Skills (growth.design)
+https://medium.com/sequoia-capital/leveraging-data-to-build-consumer-products-fe9ea1a059b8
+https://andrewchen.com/notes-on-customer-acquisition-and-viral-marketing-from-first-round-capital-ceo-summit/
+https://www.alexanderjarvis.com/reid-hoffmans-private-pitch-deck-guidance/
+https://medium.com/sequoia-capital/defining-product-success-metrics-and-goals-57e9cca29f9a
+https://mode.com/blog/facebook-aha-moment-simpler-than-you-think/
+
+Engagement
+https://sarahtavel.medium.com/the-hierarchy-of-engagement-expanded-648329d60804
+https://departmentofplay.net/retention-framework-keep-your-players-forever/
+
+Product design & emotion
+https://diopd.org/wp-content/uploads/2012/02/three-levels-of-emotion.pdf
+
+User acquisition
+Adam Penenberg, “Viral Loop”
+Robert Cialdini, “Influence, The Psychology of Persuasion”
+Tim Ash, “Landing Page Optimization”
+David King and Siqi Chen, “Metrics for Social Games”
+https://growwithward.com/north-star-metric/
+
+Viral growth and Loops
+https://www.forentrepreneurs.com/lessons-learnt-viral-marketing/
+https://www.thoughtlytics.com/newsletter/growth-loops
+https://www.forentrepreneurs.com/lessons-learnt-viral-marketing/
+https://growwithward.com/aaarrr-pirate-funnel/
+https://25iq.com/2018/05/19/business-lessons-about-growth-from-andrew-chen-andreessen-horowitz/
+
+Metrics & Measures
+https://a16z.com/2015/09/23/16-more-metrics/
+https://railsware.com/blog/a-full-guide-on-startup-metrics-for-product-success/
+The red flags and magic numbers that investors look for in your startup’s metrics – 80 slide deck included! at andrewchen
+https://www.linkedin.com/posts/andrewchen_10-magic-metrics-indicating-a-consumer-tech-activity-6589957456548507648-tIsh
+https://medium.com/life-at-go-jek/gojeks-growth-story-the-secret-behind-our-hypergrowth-a069a97cfde4
+https://hbr.org/2020/04/the-most-important-metrics-youre-not-tracking-yet
+https://discover.mixpanel.com/rs/461-OYV-624/images/Guidetoproductmetrics-Mixpanel.pdf
+https://medium.com/swlh/diligence-at-social-capital-part-1-accounting-for-user-growth-4a8a449fddfc
+1 For some excellent examples you can read more here. 
+2 Another way to figure this out is to use a Logistic regression. The model will tell you how much and in which direction each variable contributes to conversion. A logistic regression's output is constrained to between 0 and 1, so it's great for predicting binary outcomes like conversion. More on this from David Cook here. 
+3 You can project out the total size of the product with this, by combining TAM with the cohort % you have left after a year (D365 or D730) and then the ARPU. This needs to be big enough to have scale.
+
+[LT1]Need to talk about distribution and use acquisition
+[JJ2]I built this view for Game Pass (as described in the doc as that's how I normally look at things) but the other problem -- cultural-- is that everyone was 'used to' looking at things differently. GP marketing looked at folks who churned from subs as 'new' users and re-cohorted them so all curves are montonically decreasing. As long as I can tease out the same insights (which actually I could b/c I had my team segment the 'new' users into 1st, 2nd, nth time offer takers and group their curves as such-- and I had the view that I used in addition to their view, which now had the granularity to dissect 1st vs. Nth time offer takers) I just rolled with it. If it's easier for folks to digest due to familiarity-- that's another concern (and frankly in me experience the biggest concern-- letting folks use famiilar dashboards and adding to them vs. re-teaching how to think about different numbers matters) when trying to get a culture to shift toward being more data-centric.
+[JJ3]One thing I've found helpful over the years is to look at 'sources' and 'sinks' for DAU/WAU/MAU or whatever the core quanta is for your experience.  For example-- with Zynga games we looked at all the sources of users -- paid ads, Feed clicks (from posts), User-to-user (U2U) notifs (ask friends for buildables), app-to-user (A2U) (marketing messaging, sales…), viral adds/invites, etc... 'sinks' are the activities we know if they fell, DAU would soon follow (things like number of senders, sends/sender, sharers (posts) shares/sharer-- these indicators led thigns like DAU from U2U, feed clicks as this is people asking for help/gifts -- if this dropped we knew we needed to keep pace on buildable items, etc…). I’m in the process of wading through all of this all out for Xbox… starting with getting our notification story straight which I'm excited that PEP has really embraced.  I encourage the PMs to include a trigger point and temporal map of when notifs trigger along with predictions of how many DAU will trigger, efficacy of the notif etc...
+[JJ4]Confirmation bias abounds… I always like to train folks to try to disprove, and if they are totally unable to, they are left with the assumption that they must be correct...
+[JJ5]2 comments about viral. First-- and I've used this type of setup as an interview question (which I adapt and change circumstances to make it more of a conversation about their understanding of CAC…) -- you have 2 products, one has a viral coefficient of 0.9 and the other 0.3. Which one is better to invest time in improving? Each acquired user brings 1/(1-n) users total so going from 0.9 to 0.95 means you go from each user acquired resulting in 10 users to 20.  Going from 0.3 to 0.6 (doubling it) takes you from each acquired user resulting in 1.43 users to 2.5 users. This leads to my second comment-- eCAC. If you pay for 1 user and your viral coefficient is 0.95-- your effective CAC is that CPA/20...
+[JJ6]This metric tends to SKU if acquisition is on a massive growth spurt as if each Day acquisition goes up from the prior day you are getting More MAU that inflate the ratio… just something I tend to tell folks to be aware of -- I like it as a steady state bell-weather for games. 
+[JJ7]Ah. I call this "Unbounded Retention" and find that to be more of a vanity metric.  What I call "Rolling Retention" is this-- of ALL the people who were here today -- how many are here in 7 days-- that's how I think about D7 Rolling-- it's a 'rolling' snapshot of the current users as one giant cohort, sometimes called CURR (and I refer to it as such here often-- though CURR can exclude new and recently reactivated users) or current user return rate.  This is useful for things like if new content gets put into a subscription entitlement for example. Whether you are in Week 1 or week 25 if you are here this week and new star wars content drops next week, the affinity of that content tends to span cohorts so this kind of view is good for looking at things that impact users in an age/retention agnostic way-- this isn't good for something like advanced features that only folks who are deep into the product might appreciate, for example.
+[SY8]@Lila Tretikov should we move this up to after Tradeoff Metrics?
+[JJ9R8]Check out my sources & Sinks comment earlier -- I believe in output metrics… FWIW I was thinking this when I read that section or maybe my comment there is more related to where you want to put this?
+[JJ10]Fantastic-- this is what I think I'm referring to as 'sinks' in my 'sources & sinks' comment earlier.
+[JJ11]Ah ok see my earlier comment in the viral section on eCAC-- same thing as here I think.
+[JJ12]Agree. One thing we used to also look at as a predictor of this was ROAS (return on Ad spend). We had a 90 day working capital cycle so we spent up until marginal rate of return was 0 by 90 days on Zynga Poker, for example.  However  we knew from our D3 ROAS whether or not the campaign was going to work-- that was powerful and helped us spend wisely.  Another thing is that this relates to retention b/c if retention drops quickly and bottoms out adding time to your payback window doesn't really help.  If you have much higher retention and can tolerate a longer working capital cycle, it's possible to outspend on CAC b/c you can tolerate a longer payback period, and I've definitely seen this play out w/ mobile games-- and this is why when a large company clones a game if it has similar metrics they can bleed out the competitor by forcing them to tolerate a longer working capital cycle than they are able to and wrest market share from them, build habits and then reap the rewards of just retaining the larger user base… this strategy is important if you find yourself in a winner-take-all or winner-takes-most situation.
+[JJ13]One thing to consider here is breaking this apart by biz model. For example we look at store spend  for subs vs. non-subs as subs have access to a vast subscription library-- so it's good to understand stand-alone purchase behavior and is that more than made up for by the subscription fee or not -- and does that vary by region or other variable etc...
+[LT14]@Sonali Yadav left this section for you. Please make sure you cover CTR, CVR, CPC, CPA connection
+[JJ15]I think it's important to note-- qulaity of acquisition is mentioned here but as granular as you acquire is as granular as you have to monitor-- so if you run paid ads -- by campaign (minimally) but ad unit within a campaign (advanced) and also by channel. Classic example is social games-- organic users are generally always better than paid acquisitions EXCEPT for casino games category…. Paid acquisition generally outperforms organic in my experience.  I'd guess there are other oddities like this in other verticals and that's why it's good to compare quality for each channel/source.
+[JJ16]Good practice as part of a spec is to include notif triggers, expected outcomes and expected temporal cadence to get an overall sense of which ones are capped/uncapped and range of holistic notif experiences a user might have, by segment.
+[LT17]Include monetization here
+[LT18]@Sonali Yadav This section is unfinished. Include Ubuntu Papercuts case study
+[LT19]@Sonali Yadav can you please match with slide deck?
+[SY20R19]Done.
+---------------
+
+------------------------------------------------------------
+
+
+
+---------------
+
+------------------------------------------------------------
+
+
+
+
+
+
+2
+
+
+
+

@@ -1,0 +1,203 @@
+
+[Product name]
+Section 0[SY1][ML2][SY3][ML4][SY5]: Product Placemat
+Product basics to give everyone simple context of your product before diving into the ethos.
+TAM or SAMUser BaseUser GrowthReturning usersWW addressable market for your specified segmentDAU / WAU / MAU%% growth in DAU / WAU / MAU over last 12 monthsYYYMMS Plus Metric(s)Product MetricsCompetitorsAge & Share of MarketInclude current value for the following metrics.
+* MSA attach rate
+* SISU success rate
+* User base on WindowsWhat leading indicators measure the health of the product? Name and current value.Established and/or startups. What measures of relative performance are tracked?How many years has the product been active? And what % of the total market has the product penetrated?Note: this section will be included in the P365 invite and the pre-read emails that go to the forum attendees. It will give everyone a quick snapshot of the product before diving into details
+
+
+
+Section 1: Metrics[ML6]
+1.1 Product Metrics
+This section should be 1-2 pages of data with graphs/data showcasing products metrics. The following graphs are REQUIRED metrics covering user growth, engagement, and retention. You are welcome to edit with data from your product. If data is unavailable, simply state “data unavailable”. 
+
+Each metric should include OKR targets (if applicable). Explanations of trend changes are welcomed but avoid lengthy commentary.
+
+User Growth
+
+New users: [definition]
+
+Returning users: [definition]
+
+Resurrected users: [definition]
+
+Lapsed users: [definition]
+Product Funnel
+
+Reach: [definition]
+
+Onboarding: [definition - every product should have a measure of actions that “prime” a user for active use] 
+
+Engagement: [definition]
+
+Retention: [definition]
+
+Monetization: [definition]
+New Users
+
+Engaged Users
+
+Engaged Users: [definition]
+Retained Users
+
+Retained Users: [definition – use whatever definition is appropriate for the product. 7d/30d/90d/etc.] 
+Additional OPTIONAL metrics are included on the Metrics page of the Product 365 SharePoint site. Teams are empowered to add as many or as few of these as they would like to support their data story.
+
+
+1.2 Microsoft Plus Metrics
+This section should be 1-2 pages of data with graphs/data MS+ metrics that are applicable to your product. You are welcome to omit metrics that do not apply but must comment on why they’ve been omitted.
+
+For graphs/data, include time-series charts. You are welcome to edit with data from your product. If data is unavailable, simply state “data unavailable”. Each metric should include OKR targets (if applicable). Explanations of trend changes are welcomed but avoid lengthy commentary.
+
+MSA attach rate
+
+MSA attach rate: % of your base that is signed in with an MSA
+* excl. FAABS
+* affects Windows, Edge, Office, Outlook, OneDrive, SANE, Xbox
+
+
+SISU success rate
+
+SI and SU success rate[SY7][SY8][ML9][SY10][ML11][SY12]: % of users who successfully sign in or sign up with an MSA; ideally broken out by device type.
+User base on Windows
+
+User base on Windows: % of Windows user base who are also using your product broken out by Win10 & 11.[SY13][ML14]
+Unified Storage users
+
+USQ users: % of users who are contributing to unified storage through your service.
+
+CGE impressions [SY15][ML16]and click-through[ML17]
+
+CGE Impressions: # of CGE impressions in the product.
+CGE CTR: % of impressions that are clicked on by users.
+
+Rewards users[ML18][NA19]
+
+Rewards users: % of users who are active rewards members.
+
+Omitted metrics
+[List of omitted/removed MS+ metrics and rationale for why.]
+
+
+Section 2[SY20][ML21]: Growth Strategy
+2.1 Product Strategy
+This section should be no more than 1 page on the growth strategy for your product.
+* What is the one-line strategy for your product? What is the strategic position, and how will you win?
+* How does your product differentiate from the competitors listed in the Product Placemat above?
+* How is the team thinking about multi-device? And in particular, mobile growth?
+
+For apps in the pre-PMF stage (emerging/H2 products), Appendix A has a set of questions that may be better suited since products in this stage are not driving material growth and impact.
+
+2.2 Microsoft Plus Strategy
+This section should be no more than 2 pages on the product’s contribution to MS+.
+* What is your focus in Microsoft Plus?
+* Where can other products help amplify or accelerate your value prop helping you grow?[SY22][ML23]
+* Where does your product amplify or accelerate growth in other products?[SY24]
+* Describe how the product contributes to or leverages ecosystem levers[SY25]. Similar to MS+ metrics, you are welcome to omit levers that do not apply but must comment on why they’ve been omitted.
+o Describe how the product promotes MS Accounts and signing in.
+o Describe how the product is used on Windows and how Windows is the best platform for the product.
+o Describe how the product contributes to Universal Storage Quota.
+o Describe how the product contributes to the Consumer Growth Engine. Data, surfaces, etc.
+o Describe how the product enables users to earn Rewards points. Can users redeem points for anything in the product?
+o How does the product enable or encourage users to make eCommerce purchases?
+
+Section 3: Growth Plans
+This section should be no more than 3 pages on how you’ll grow the product. Growth can be whatever you define it (core product or MS+) and how it will impact the product.
+
+Most products use the following progression for growth.
+1. First, drive growth in the product as a standalone product/business.
+2. Second, leverage the larger consumer ecosystem to drive growth in the product/business
+3. Third, contribute back to the ecosystem to drive growth in other products
+
+3.1 Theses for Growth
+Based on your product strategy, your MS+ strategy, the growth progression above, and finally metrics + insights, tell us about the top 1-3 theses to grow the product.
+
+* This could be opening the top of the funnel; driving deeper engagement through magic moments or integrations with other products; improving user value by directing users to adjacent products; supporting an ecosystem lever; or something else.
+* What insights (data, research, signals) support this thesis? The clearer you can be about what the data is telling you to do and the impact it could have the better.
+
+3.2 Investments
+For each thesis, tell us about 1-3 investments the team is making. Big bets or “moon shots” are encouraged! For each investment, include the following detail.
+* Background: What is the title of the investment? How did you identify the investment? What insights guided the team?
+* Falsifiable hypothesis: What is the falsifiable hypothesis? What would prove the hypothesis false?
+* Estimated impact: What is the estimated impact to product metrics in section 1 or SLT Metrics?
+* Go to market: When will this investment go to market? (end users, not insider rings)
+* User experience: What does the experience or flow look like to the end user?
+
+3.3 User experiences / flows / journeys
+In the presentation, show the user journey/flow for each thesis and/or investment. What will consumers see / experience in the product?
+
+
+Appendix A: pre-PMF questions
+Why Now
+* Provide a market analysis for your product. What market conditions exist that affect the outlook of your product? Why is “right now” the time for your product? How have your users and their behaviors changed: basic environment, needs, market trends, etc.?
+* Provide a competitive analysis for your product. Who are the main competitors and why? How long have they been in the market?
+* Provide a summary of user research surrounding your product. What are key insights that the team has learned and is folding into their product plans?
+* What is that Total Addressable Market (TAM) and Serviceable Addressable Market (SAM) for your product? And what Share of Market (SOM) do you believe the product could capture?
+
+Product North Star
+* What is the North Star or Value Prop of the product? What unmet or unfulfilled needs will it solve? Is the product or experience new to the market, or a competitor fast-follow?
+* What are the key segments and audiences for your product? Not SMB or IT Admin, but a specific user with specific needs. How do their unmet or unfulfilled needs differ by device type (web vs. desktop vs. mobile vs. tablet)?
+* What are the critical user journeys for these users? How will the critical user journeys achieve the value prop for your audience?
+* How do these critical user journeys differ by device type (web vs. desktop vs. mobile vs. tablet)?
+* What is the falsifiable hypotheses1 and product strategy to achieve the mission above? What assumptions have been made about the opportunity, solution, or GTM motion that will be validated during these early stages?
+o How will you leverage Microsoft’s strengths and competitive advantages?
+o What must the product be great at?
+o What differentiated value will the product bring?
+o What will you deliver—and not deliver—in early stages?
+
+1 A hypothesis can’t be right unless it can be proven wrong
+[SY1]Should we bring more MS+ here? I'm thinking of specific MS+ metrics we want to elevate… maybe Windows and MSA to start?
+[ML2R1]I don't think so? Unless we have a specific MS+ focus for the next 4-6 months? We currently have a slot for MS+ metrics all up, which teams can select which are most important to them.
+[SY3R1]I'm wondering if we should set that focus, at least for P365. What are the 1-2 things we want to drive every team towards in the next 3-6 mos? MSA and Windows seem foundational but it could be something else too.
+[ML4R1]What do you think about the following metrics as a focus for the next 3-6 months?
+* MSA attach rate
+* SISU success rate
+* User base on Windows
+[SY5R1]These look good. I did like your original more open-ended question as well, don't know if there's a way to include both?
+[ML6]Currently missing a metric for perceived value in the product.
+[SY7]I suggest breaking out SI and SU success rates. An aggregate number could mask issues in one or the other.
+[SY8R7]It would also be great to include - % of sign-ins driven by SSO (i.e., users that didn't get an auth prompt).
+[ML9R7]You bet. Are these metrics that Jadis is already asking teams to break out? Or is it new?
+[SY10R7]They do track sign-in and sign-up separately, since the flows are different. What isn't tracked yet is SI driven by SSO but I expect it will be added soon since of the Jadis OKRs is getting to 90% SI with no auth prompts.
+[ML11R7]Got it. Let me know if we should adjust the name of the SSO metric. I suspect we'll standardize at some point, but for now I want to make sure we use what people will be most familiar with.
+[SY12R7]That looks good to me. Let me also check-in with the Jadis team on how they're planning to measure this.
+[SY13]Suggest dropping "ideally". At least until critical mass shifts to Win11, we should look at both.
+[ML14R13]Ack. Updated.
+[SY15]Which is more important for CGE to start - 
+1. optimizing effectiveness of surfaces across different products
+2. driving user (re)acquisition for each product
+
+If it's the former, the impressions and CTR metric makes sense. If it's the latter, we may want to ask products for % of new users acquired through CGE campaigns (and % of inactive users re-engaged).
+[ML16R15]Great point. CGE will say it's about the effectiveness of surfaces getting users to engage, which this graph reflects.
+
+That said, the New Users graph above should have acquisition via CGE as a channel. So we can/will ask about CGE contribution there.
+[ML17]CGE's vision and mission may have an affect here. If CGE's main vision is about driving subscription purchases and Bing searches, then should we require all products to support it?
+
+CGE is a much easier "sell" if they're helping users engage more deeply in the product across both unpaid and paid motions.
+[ML18]@Nilesh Acharya would love your thoughts on this one. I would like to have a deeper metric than rewards user overlap, but I am not sure what we should reasonably expect from teams.
+
+Maybe how many users are earning points via the product? But that's a bit leading as in theory not every product should earn points.
+@Mark Licata You are right as this is very product specific. Some options 1) # of users earning or redeeming rewards 2) user retention of rewards users vs. non-rewards users. 3) LTV value of rewards user vs. non rewards user. (2), (3) will require significant more work and something we aspire for teams to share longer term. I would start with what you have or (1) for now.    [NA19R18]
+[SY20]I read this section as core product strategy (of which growth is a part), followed by the growth deep dive in section 3. Let me know if I got that right.
+[ML21R20]Yes, correct. We didn’t want a full "ethos" but rather the big points, which I've tried to capture in these 3 bullets.
+[SY22]Suggest dropping this from here to keep this laser focused on the individual product strategy (also since we go deep on this question in the next two sections).
+[ML23R22]Ack. Will move/incorporate below.
+[SY24]Wondering if we can sharpen these questions, maybe something like - 
+- What's your focus for Microsoft Plus?
+- Where can other products help amplify or accelerate realizing your value prop?
+- How will the product contribute/leverage ecosystem levers?
+[SY25]Contribute and/or leverage?
+---------------
+
+------------------------------------------------------------
+
+
+
+---------------
+
+------------------------------------------------------------
+
+
+
