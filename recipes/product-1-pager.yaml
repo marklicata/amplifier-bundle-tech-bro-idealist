@@ -1,0 +1,254 @@
+# =============================================================================
+# product-1-pager
+# =============================================================================
+#
+# Generate a senior-leader-ready product 1-pager for an engineering research
+# project by pointing Amplifier at a repository.
+#
+# Designed for engineers with low product sense: point it at a repo, get a
+# document you can put in front of a senior leader without embarrassment.
+#
+# Required agents:
+#   - foundation:explorer  (repo exploration)
+#   - self                 (writing, via model_role: writing)
+#
+# Usage:
+#   amplifier run "execute recipes/product-1-pager.yaml with repo_path=/path/to/repo"
+#
+# Output:
+#   ./product-1-pager.md in the current working directory
+#
+# =============================================================================
+# CHANGELOG
+# =============================================================================
+#
+# v1.0.0 (2026-07-31):
+#   - NEW FEATURE: Initial release
+#     * Two-step flat recipe: explore repo, then write 1-pager
+#     * Embeds stage classification (Research Idea / Prototype / Product)
+#     * Embeds the 7 product questions with "Unknown" as a valid answer
+#     * Enforces strict 400-word bulleted output format
+#
+# =============================================================================
+
+name: "product-1-pager"
+description: "Analyze a repository and generate a concise, senior-leader-ready product 1-pager covering stage, problem, users, evidence, ownership, and success criteria."
+version: "1.0.0"
+tags: ["product", "1-pager", "research", "repo-analysis", "product-sense"]
+
+context:
+  # Required: path to the repository to analyze
+  repo_path: ""
+
+steps:
+  # ---------------------------------------------------------------------------
+  # Step 1: Gather raw evidence from the repo.
+  # Deliberately evidence-focused, not interpretive — the framework is applied
+  # in step 2. This step's job is to find facts, including absent facts.
+  # ---------------------------------------------------------------------------
+  - id: "explore-repo"
+    agent: "foundation:explorer"
+    prompt: |
+      Explore the repository at: {{repo_path}}
+
+      Your job is to gather EVIDENCE for a product assessment. You are not
+      writing the assessment — you are collecting the raw material for it.
+
+      Read the README, docs, code comments, config files, tests, CI configs,
+      issue templates, CHANGELOG, and recent commit messages.
+
+      Extract and report the following:
+
+      1. WHAT THE PROJECT DOES FOR USERS
+         - Describe it in plain language a non-engineer would understand.
+         - Strip out jargon, acronyms, and internal codenames. If the repo only
+           describes itself in jargon, translate it and say so.
+
+      2. MATURITY INDICATORS
+         Look for concrete signals and report what you find AND what is absent:
+         - Tests (present? meaningful coverage? or token/smoke only?)
+         - CI/CD configs (.github/workflows, azure-pipelines, etc.)
+         - Deployment artifacts (Dockerfile, k8s manifests, helm charts,
+           terraform, serverless configs)
+         - Any mention of users, customers, pilots, or production traffic
+         - Issue tracker character: real-world bug reports vs. open research
+           questions vs. empty
+         - Any hosted demo, API endpoint, published package, or live URL
+         - Versioning/release discipline (tags, releases, changelog)
+
+      3. THE PROBLEM IT SOLVES FOR USERS
+         - What breaks or is painful without this? Who feels that pain?
+         - Source this from README, docs, comments, and commit messages.
+         - Quote or cite where you found it.
+
+      4. USERS, CUSTOMERS, OR PARTNER TEAMS
+         - Any named people, roles, teams, orgs, or customer segments mentioned
+           anywhere in the repo.
+
+      5. EVIDENCE OF VALIDATION
+         - Metrics, benchmarks, eval results, user feedback, published papers,
+           partner conversations, leadership interest, funding, or awards.
+
+      6. CONNECTED PRODUCT TEAMS OR ORGANIZATIONAL PARTNERS
+         - Any signal about which product team or org would consume this work.
+
+      CRITICAL: Absence of evidence IS evidence. If you cannot find something,
+      say "NOT FOUND" explicitly rather than inferring or inventing it. Do not
+      speculate about users, customers, or validation that the repo does not
+      actually mention. A confident "not found" is more useful than a guess.
+
+      Report your findings as organized notes under the six headings above.
+    output: "repo_findings"
+    timeout: 1200
+
+  # ---------------------------------------------------------------------------
+  # Step 2: Apply the product framework and write the deliverable.
+  # Uses model_role: writing for quality long-form prose judgment.
+  # ---------------------------------------------------------------------------
+  - id: "write-1-pager"
+    agent: "self"
+    model_role: "writing"
+    prompt: |
+      You are writing a product 1-pager for an engineering research project.
+      The audience is a senior leader who has 90 seconds and no context.
+
+      Repository analyzed: {{repo_path}}
+
+      REPO FINDINGS FROM EXPLORATION:
+      {{repo_findings}}
+
+      ---
+
+      Apply the following framework to those findings.
+
+      ## STAGE CLASSIFICATION
+
+      Pick EXACTLY ONE stage, based on the evidence — not on ambition:
+
+      - **Research Idea**: Early exploration. No users, no deployment.
+        Value delivered = insights that improve a product.
+      - **Prototype**: Working demo. Some users. Not production-ready.
+        Value delivered = insights + code that improve a product.
+      - **Product**: Deployed, real users, actively maintained.
+        Value delivered = an entire capability we ship ourselves. (Rare —
+        do not classify as Product unless there is real deployment AND real users.)
+
+      Be honest. Most research repos are Research Idea or Prototype.
+      Over-classifying destroys the credibility of the whole document.
+
+      ## THE 7 QUESTIONS
+
+      Two modes — know which applies to each question:
+
+      Questions 1, 2, 3, and 7: if the answer is not clear from the repo
+      findings, write your best framing hypothesis based on the project's
+      domain and likely use case. These developers will not have clear answers
+      to a lot of these questions — help them think it through. But label every
+      hypothesis with [AI Recommendation — needs your review] so they know it
+      is a starting point, not a fact.
+
+      Questions 4 and 5: if the answer is not in the findings, write the
+      specific "Unknown" label below and stop. Do not invent evidence. Do not
+      guess at a partner team. A blank is honest; a fabricated signal is harmful.
+
+      1. What is the problem? — What breaks without this? Who suffers?
+         If unclear: "[AI Recommendation — needs your review]:" + hypothesis.
+
+      2. Who are the users? — A specific role, team, or segment. Never "everyone".
+         If unclear: "[AI Recommendation — needs your review]:" + hypothesis.
+
+      3. What are their needs/wants? — Needs = must-haves. Wants = nice-to-haves.
+         If unclear: "[AI Recommendation — needs your review]:" + hypothesis.
+
+      4. What evidence do we have that it matters? — Data, feedback, a partner
+         ask, or a leadership signal.
+         If none found: "Unknown — needs real data signal." Do not invent.
+
+      5. Which team owns this space? — The product team or org that should
+         consume this output.
+         If unknown: "Unknown — needs a partner team." Do not guess.
+
+      6. Have we talked to them? — Yes / No / Partial, plus what was learned
+         (1 bullet if yes).
+
+      7. What would success look like? — A concrete outcome. Not "we ship a
+         feature" — an actual change in the world.
+         If unclear: "[AI Recommendation — needs your review]:" + hypothesis.
+
+      ## OUTPUT FORMAT
+
+      Maximum 400 words total. Bullets and phrases only — NO prose paragraphs.
+      Use as many bullets as the content needs. Some answers are one bullet;
+      others need 2-3. Do not compress a richer answer into one bullet because
+      the template shows one. Structure serves content, not the other way around.
+
+      ```
+      ## [Project Name] — Product 1-Pager
+
+      **Stage**: [Research Idea | Prototype | Product]
+
+      ---
+
+      **The Problem**
+      - [1+ bullets — or "[AI Recommendation — needs your review]: [hypothesis]"]
+
+      **The Users**
+      - [1+ bullets — or "[AI Recommendation — needs your review]: [hypothesis]"]
+
+      **Needs / Wants**
+      - Needs: [1+ bullets — or "[AI Recommendation — needs your review]: [hypothesis]"]
+      - Wants: [1+ bullets — or "[AI Recommendation — needs your review]: [hypothesis]"]
+
+      **Evidence It Matters**
+      - [1+ bullets — or "Unknown — needs real data signal"]
+
+      **Who Owns This Space**
+      - [team/org — or "Unknown — needs a partner team"]
+
+      **Have We Talked to Them?**
+      - [Yes / No / Partial + key learnings in 1 bullet]
+
+      **What Success Looks Like**
+      - [1+ bullets — or "[AI Recommendation — needs your review]: [hypothesis]"]
+
+      ---
+
+      **Impact Path**
+      [One sentence: this [stage] delivers [what] to [which product/team]]
+
+      **Open Questions**
+      1. [Most pressing unknown to move forward]
+      2. [Second]
+      3. [Third]
+      ```
+
+      ## WRITING RULES
+
+      - Replace [Project Name] with the actual project name from the repo.
+      - Plain language only. No jargon, no acronyms without expansion, no
+        marketing voice, no hedging filler.
+      - Every factual claim must trace back to the repo findings. If the
+        findings do not support it, use "Unknown" or "[AI Recommendation]"
+        per the question-level rules above — not silence, not invention.
+      - [AI Recommendation — needs your review] answers are explicitly hypotheses
+        to help the developer think. Write them as you would frame the question
+        in a product review meeting, not as authoritative fact.
+      - The Open Questions are the most valuable section for a low-product-sense
+        engineer — make them the three questions that would most change the
+        project's direction if answered. Not trivia.
+      - Stay under 400 words. Cut adjectives before cutting substance.
+
+      ## FINAL ACTION
+
+      # Output location note: product-1-pager.md is written to the CURRENT
+      # WORKING DIRECTORY (where Amplifier is invoked from), not necessarily
+      # inside the target repo. If the user runs this from inside the repo
+      # they analyzed, it lands there. If run from elsewhere, it lands in
+      # the invocation directory. Print the full path so users can find it.
+
+      Write the completed 1-pager to `product-1-pager.md` in the current
+      working directory. Print the full file path after writing. Then reply
+      with the full contents of the file so the user can read it without
+      opening it.
+    output: "one_pager"
+    timeout: 900

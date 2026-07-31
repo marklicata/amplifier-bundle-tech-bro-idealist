@@ -8,35 +8,27 @@ includes:
   - bundle: git+https://github.com/microsoft/amplifier-bundle-stories@main
   - bundle: git+https://github.com/anderlpz/amplifier-bundle-design-intelligence-enhanced@main
   - bundle: git+https://github.com/microsoft/amplifier-bundle-dot-graph@main#subdirectory=behaviors/dot-graph.yaml
-  
-session:
-  orchestrator:
-    module: loop-streaming
-    source: git+https://github.com/microsoft/amplifier-module-loop-streaming@main
-  context:
-    module: context-simple
-    source: git+https://github.com/microsoft/amplifier-module-context-simple@main
 
-tools:
-  - module: tool-filesystem
-    source: git+https://github.com/microsoft/amplifier-module-tool-filesystem@main
-  - module: tool-bash
-    source: git+https://github.com/microsoft/amplifier-module-tool-bash@main
-  - module: tool-web
-    source: git+https://github.com/microsoft/amplifier-module-tool-web@main
-
-hooks:
-  - module: hooks-logging
-    source: git+https://github.com/microsoft/amplifier-module-hooks-logging@main
-
-
-# Foundation already provides: providers, tools (filesystem, web, bash), session config
-# We only declare what's unique to this bundle
-
-# Uncomment when tool-stats module is ready:
+###########################################################################################
+# Foundation already provides: providers, tools (filesystem, web, bash), session config   #
+###########################################################################################
+# session:
+#   orchestrator:
+#     module: loop-streaming
+#     source: git+https://github.com/microsoft/amplifier-module-loop-streaming@main
+#   context:
+#     module: context-simple
+#     source: git+https://github.com/microsoft/amplifier-module-context-simple@main
 # tools:
-#   - module: tool-stats
-#     source: git+https://github.com/marklicata/amplifier-module-tool-stats@main
+#   - module: tool-filesystem
+#     source: git+https://github.com/microsoft/amplifier-module-tool-filesystem@main
+#   - module: tool-bash
+#     source: git+https://github.com/microsoft/amplifier-module-tool-bash@main
+#   - module: tool-web
+#     source: git+https://github.com/microsoft/amplifier-module-tool-web@main
+# hooks:
+#   - module: hooks-logging
+#     source: git+https://github.com/microsoft/amplifier-module-hooks-logging@main
 
 agents:
   include:
@@ -48,7 +40,13 @@ agents:
     - product-bundle:agents/product-growth-planner
     - product-bundle:agents/product-metrics-architect
     - product-bundle:agents/product-strategist
-    - product-bundle:agents/product-watchdog    
+    - product-bundle:agents/product-watchdog
+
+tools:
+  - module: tool-skills
+    config:
+      skills:
+        - "@product-bundle:skills"
 ---
 
 # Product Management Bundle
