@@ -13,19 +13,49 @@
 #   - self                 (writing, via model_role: writing)
 #
 # Context variables:
-#   repo_path      (REQUIRED) Path to the repository to analyze.
+#   repo_path      (REQUIRED) Location of the repository to analyze. Accepts
+#                             any of three forms, each explored differently:
+#                               a. GitHub URL (https://github.com/owner/repo)
+#                                  -> browsed remotely via the `gh` CLI and the
+#                                     GitHub API. No clone, no disk usage.
+#                               b. Any other Git URL (GitLab, Azure DevOps,
+#                                  git@, ssh://, *.git)
+#                                  -> cloned to a temp directory and explored
+#                                     there.
+#                               c. Local filesystem path
+#                                  -> explored in place.
 #   output_format  (optional) "markdown" (default) or "json".
 #   researcher     (optional) Name of the researcher / project owner.
 #                             Blank renders as "Unknown".
-#   git_url        (optional) Repository remote URL. Blank triggers best-effort
-#                             detection from the repo, falling back to repo_path.
+#   git_url        (optional) Repository remote URL, for DISPLAY only. Blank
+#                             triggers best-effort detection from the repo,
+#                             falling back to repo_path. Never used to fetch.
 #
 # Usage:
+#   # Local path — explored in place
 #   amplifier run "execute recipes/product-1-pager.yaml with repo_path=/path/to/repo"
+#
+#   # GitHub URL — browsed via `gh api`, nothing written to disk
+#   amplifier run "execute recipes/product-1-pager.yaml with \
+#     repo_path=https://github.com/org/repo"
+#
+#   # Non-GitHub URL — cloned to a temp dir
+#   amplifier run "execute recipes/product-1-pager.yaml with \
+#     repo_path=https://gitlab.com/org/repo.git"
 #
 #   amplifier run "execute recipes/product-1-pager.yaml with \
 #     repo_path=/path/to/repo, output_format=json, researcher=Jane Doe, \
 #     git_url=https://github.com/org/repo"
+#
+# Private repositories:
+#   GitHub repos (browsed via `gh api`) require an authenticated `gh` CLI —
+#   check with `gh auth status`. Other hosts are cloned, which requires
+#   credentials already available in the environment (an SSH key or a credential
+#   helper). This recipe never prompts for and never stores credentials.
+#
+# Requirements:
+#   `gh` CLI (GitHub URLs only) · `git` (non-GitHub URLs only) · neither is
+#   needed for local paths.
 #
 # Output (written to the CURRENT WORKING DIRECTORY):
 #   ./product-1-pager.md     when output_format is "markdown" (default)
@@ -34,6 +64,113 @@
 # =============================================================================
 # CHANGELOG
 # =============================================================================
+#
+# v1.3.0 (2026-08-05):
+#   - IMPROVEMENT: GitHub URLs are now browsed remotely via the `gh` CLI and the
+#     GitHub API instead of being cloned
+#     * ROOT CAUSE: v1.2.0 made hosted repos analyzable by cloning them, which
+#       worked but paid a fixed cost on every single run — download the entire
+#       repository, write it to disk, then read the four or five files the
+#       exploration actually needs. For a large repo that is minutes of transfer
+#       and hundreds of megabytes of disk to answer questions that live in the
+#       README, the docs directory, and the commit log.
+#     * THE KEY INSIGHT: exploration here is READ-ONLY and SPARSE. It never
+#       needs a working tree, an index, a checkout, or a branch — it needs the
+#       contents of a handful of named files. Cloning is a whole-repository
+#       operation being used to serve a handful-of-files question, and GitHub
+#       already exposes exactly the handful-of-files primitive: the trees API
+#       to see what exists, the contents API to read a specific path. Fetching
+#       only what is read makes the cost proportional to the work rather than
+#       to the repository.
+#     * IMPLEMENTATION: step 0 now classifies {{repo_path}} into three cases
+#       rather than two. GitHub URL (matches `https://github.com/owner/repo`,
+#       with any `.git` suffix and trailing slash stripped) -> parse owner and
+#       repo, browse via `gh api`. Any other URL -> the v1.2.0 clone chain,
+#       unchanged. Local path -> explore in place, unchanged since v1.1.0.
+#       Backward compatible by construction: the new branch is strictly
+#       narrower than the URL branch it was carved out of, so nothing that
+#       worked before changes route except GitHub URLs, which get faster.
+#     * BROWSE SEQUENCE: `git/trees/HEAD?recursive=1` returns the full file
+#       inventory in ONE call, so file selection happens against a known tree
+#       rather than by guessing at paths and absorbing 404s. Selected paths are
+#       then read individually via the contents API, whose `content` field is
+#       base64 and MUST be decoded — a raw read yields plausible-looking
+#       gibberish rather than an obvious error, which is the more dangerous
+#       failure. `commits?per_page=100` supplies evidence item 7.
+#     * WHY `gh api` AND NOT plain `curl`: `gh` reuses the credentials the user
+#       has already authenticated, so private repositories work with no new
+#       secret handling, and the recipe keeps its promise never to prompt for
+#       or store credentials. It also carries the API version headers and rate
+#       limit handling for free.
+#     * NOT AVAILABLE FOR NON-GITHUB HOSTS: GitLab and Azure DevOps expose
+#       comparable APIs, but each needs its own auth story, path scheme, and
+#       response shape. Cloning already works there and costs nothing to keep,
+#       so the fallback stays rather than tripling the surface area for hosts
+#       nobody has asked for yet.
+#   - IMPROVEMENT: evidence item 7 (COMMIT AUTHORSHIP) gained an API path
+#     * `git log` does not exist without a clone, so the GitHub branch derives
+#       the ranked author list from the commits API instead. Same output shape,
+#       same downstream researcher-resolution chain, no working tree required.
+#     * The API caps at 100 commits per page. When the repo has more, the
+#       ranking is reported as based on the 100 most recent commits and SAID SO
+#       explicitly, because a silently truncated ranking is the same class of
+#       error `--depth 1` was rejected for in v1.2.0.
+#   - BUGFIX GUARD: the v1.2.0 "REPOSITORY UNAVAILABLE" halt now also covers
+#     GitHub API failures (repo not found, `gh` unauthenticated, `gh` not
+#     installed, rate limited)
+#     * The guard's reason for existing is unchanged: an empty findings blob
+#       handed to the writing step produces a fully hypothesized 1-pager for a
+#       repo nobody opened. A new way to fail to read the repo needs the same
+#       stop, so the marker string is deliberately identical and the writing
+#       step's precondition check needed no change.
+#     * `gh api` failing on a GitHub URL does NOT silently fall through to
+#       cloning. A 404 usually means the repo does not exist or is not visible
+#       to these credentials, and a clone will fail the same way while costing
+#       another wait — reporting the actual API error is faster and more useful
+#       than laundering it into a second, vaguer failure.
+#
+# v1.2.0 (2026-08-05):
+#   - NEW FEATURE: `repo_path` now accepts a cloneable Git URL, not just a
+#     local filesystem path
+#     * ROOT CAUSE for adding it: the explorer is a filesystem walker, so a
+#       hosted repo could not be analyzed at all. Users reasonably read
+#       `git_url` as "the repo to analyze" when it was only ever a display
+#       string, producing a 1-pager whose Repository header pointed at a repo
+#       that was never actually read. Two fields that both look like a target,
+#       only one of which is one, is a trap.
+#     * THE KEY INSIGHT: there is exactly ONE analysis target, so it belongs in
+#       exactly ONE field. Rejected the alternative of adding a separate
+#       `repo_url` input: two target fields require precedence rules for the
+#       both-set case, and every downstream reference ({{repo_path}} in the
+#       writing step, the git_url fallback chain) would need to branch on which
+#       one won. Overloading `repo_path` keeps the target singular and leaves
+#       `git_url` with the single unambiguous job it already had: display.
+#     * IMPLEMENTATION: the explore-repo prompt gained a preliminary step 0 that
+#       tests `{{repo_path}}` for a URL shape (https://, http://, git@, ssh://,
+#       or a .git suffix). URL -> clone to a temp dir and treat that as the
+#       exploration root. Anything else -> explore in place, byte-identical to
+#       v1.1.0 behavior. Backward compatible by construction: local paths never
+#       reach the new branch.
+#     * Clone uses `--filter=blob:none` so evidence item 7 (COMMIT AUTHORSHIP)
+#       still sees FULL commit history. WHY THIS MATTERS: `--depth 1` would have
+#       been the reflex choice for speed, but it truncates history to one commit
+#       and would silently corrupt the researcher-resolution chain, which reads
+#       the top commit author. Blobless clone is fast AND complete.
+#     * Falls back to a plain `git clone`, then to `gh repo clone`, so private
+#       repos work when the environment is already authenticated. Credentials
+#       are never prompted for and never stored.
+#   - IMPROVEMENT: evidence item 8 (REPOSITORY REMOTE URL) resolves the clone
+#     URL directly when repo_path was a URL, rather than re-deriving it from the
+#     temp clone's .git/config. Same answer, one less inference hop.
+#   - BUGFIX GUARD: a failed clone now halts with an explicit
+#     "REPOSITORY UNAVAILABLE" report, and the writing step refuses to produce a
+#     1-pager when it sees that marker.
+#     * ROOT CAUSE: without this, a clone failure hands the writing step an empty
+#       findings blob. Questions 1, 2, 3, and 7 are permitted to hypothesize when
+#       evidence is thin, so the recipe would have cheerfully emitted a fully
+#       [AI Recommendation]-labeled 1-pager for a repo it never opened. That is
+#       the exact failure mode the "absence of evidence IS evidence" rule exists
+#       to prevent, so the guard is a correction, not a new policy.
 #
 # v1.1.0 (2026-08-05):
 #   - NEW FEATURE: Dual output format via the `output_format` context variable
@@ -79,12 +216,17 @@
 # =============================================================================
 
 name: "product-1-pager"
-description: "Analyze a repository and generate a concise, senior-leader-ready product 1-pager covering stage, problem, users, evidence, ownership, and success criteria. Outputs markdown or JSON."
-version: "1.1.0"
+description: "Analyze a repository (local path, GitHub URL browsed via the GitHub API, or any other Git URL via clone) and generate a concise, senior-leader-ready product 1-pager covering stage, problem, users, evidence, ownership, and success criteria. Outputs markdown or JSON."
+version: "1.3.0"
 tags: ["product", "1-pager", "research", "repo-analysis", "product-sense"]
 
 context:
-  # Required: path to the repository to analyze
+  # Required: the repository to analyze. Three accepted forms:
+  #   - GitHub URL (https://github.com/owner/repo) -> browsed via `gh api`,
+  #     no clone and no disk usage
+  #   - Any other Git URL (git@, ssh://, *.git, GitLab, Azure DevOps)
+  #     -> cloned to a temp directory and explored there
+  #   - Local filesystem path -> explored in place
   repo_path: ""
 
   # Optional: "markdown" (default) or "json"
@@ -93,8 +235,9 @@ context:
   # Optional: researcher / project owner name. Blank renders as "Unknown".
   researcher: ""
 
-  # Optional: repository remote URL. Blank triggers best-effort detection,
-  # falling back to repo_path.
+  # Optional: DISPLAY-ONLY remote URL for the Repository header. This is never
+  # fetched or cloned — to analyze a hosted repo, put its URL in repo_path.
+  # Blank triggers best-effort detection, falling back to repo_path.
   git_url: ""
 
 steps:
@@ -106,10 +249,151 @@ steps:
   - id: "explore-repo"
     agent: "foundation:explorer"
     prompt: |
-      Explore the repository at: {{repo_path}}
+      Repository to analyze: {{repo_path}}
+
+      ## STEP 0 — RESOLVE THE ACCESS MODE (do this first)
+
+      The value above is one of THREE things. Classify it, then use the matching
+      access mode. Check the cases in this order — the first match wins.
+
+      **CASE A — GITHUB URL.** Matches `https://github.com/<owner>/<repo>`
+      (also `http://`, also with a `www.` prefix). Strip any trailing `/`, any
+      trailing `.git`, and anything after the owner/repo pair (`/tree/main`,
+      `/blob/...`, query strings) before parsing. Extract `owner` and `repo`.
+      -> Use MODE A: browse remotely via the GitHub API. Do NOT clone.
+
+      **CASE B — ANY OTHER GIT URL.** Starts with `https://`, `http://`,
+      `git@`, or `ssh://`, or ends in `.git`, but is not github.com. GitLab,
+      Azure DevOps, Bitbucket, self-hosted, etc.
+      -> Use MODE B: clone to a temp directory.
+
+      **CASE C — LOCAL FILESYSTEM PATH.** Anything else.
+      -> Use MODE C: explore the path in place.
+
+      State which mode you selected, and for Case A the parsed owner and repo,
+      once at the top of your findings.
+
+      Never prompt for credentials, and never write credentials anywhere.
+
+      ---
+
+      ### MODE A — BROWSE GITHUB VIA `gh api` (no clone, no disk usage)
+
+      There is no working tree in this mode. You are fetching individual files
+      over the API, so filesystem tools (`glob`, `grep`, directory walks) do not
+      apply — use `bash` to run `gh api` commands and read their output.
+
+      **A1. Confirm the tool is usable.** Run `gh auth status`. If `gh` is not
+      installed or not authenticated, that is a hard failure — go to the
+      FAILURE REPORT below. Do not fall back to cloning (see A5).
+
+      **A2. Fetch the complete file inventory in ONE call:**
+
+          gh api "repos/<owner>/<repo>/git/trees/HEAD?recursive=1"
+
+      This returns every path in the repository. Read it and decide what is
+      worth fetching. If the response has `"truncated": true`, the repo is very
+      large — say so in your findings, and work from the paths you did receive.
+
+      **A3. Select the files to read.** From the tree, pick the paths that carry
+      product signal. Prioritize, and adapt to what actually exists:
+        - `README*`, `VISION*`, `ARCHITECTURE*`, `DESIGN*`, `ROADMAP*`
+        - `CONTRIBUTING*`, `AGENTS*`, `CLAUDE*`, `CODEOWNERS`, `MAINTAINERS*`
+        - `CHANGELOG*`, `docs/**` (read the index/overview docs first)
+        - manifests: `package.json`, `pyproject.toml`, `Cargo.toml`,
+          `go.mod`, `setup.py`, `*.csproj`
+        - maturity signals: `.github/workflows/*`, `Dockerfile`, `docker-compose*`,
+          `k8s/**`, `helm/**`, `*.tf`, `azure-pipelines*`, test directories
+        - `.github/ISSUE_TEMPLATE/*`
+
+      Fetch the most informative 10–25 files. This is a judgment call: fetch
+      enough to answer all eight evidence items, and stop fetching once more
+      files stop changing the answers. You do not need the source of every
+      module — you need the documents and configs that describe the project.
+
+      **A4. Read a selected file:**
+
+          gh api "repos/<owner>/<repo>/contents/<path>"
+
+      The response's `content` field is BASE64-ENCODED. It MUST be decoded
+      before reading — undecoded content looks like plausible text and will
+      silently poison your findings. Decode in one step:
+
+          gh api "repos/<owner>/<repo>/contents/<path>" --jq '.content' \
+            | tr -d '\n' | base64 -d
+
+      Or fetch the raw bytes directly:
+
+          gh api "repos/<owner>/<repo>/contents/<path>" \
+            -H "Accept: application/vnd.github.raw"
+
+      If a file 404s, note it and move on — a missing file is evidence too.
+
+      **A5. If `gh api` fails on the tree call, STOP.** Do not fall back to
+      cloning. A 404 or 403 here means the repo does not exist or is not
+      visible to the current credentials, and a clone will fail the same way
+      after a longer wait. Report the actual API error — it is the more useful
+      answer. Go to the FAILURE REPORT below.
+
+      ---
+
+      ### MODE B — CLONE (non-GitHub URLs)
+
+      1. Create a temp directory:
+         `WORKDIR=$(mktemp -d)/repo`
+      2. Clone with full history but without file blobs — this is fast AND
+         keeps every commit, which evidence item 7 depends on:
+         `git clone --filter=blob:none "{{repo_path}}" "$WORKDIR"`
+      3. If that fails, retry with a plain clone:
+         `git clone "{{repo_path}}" "$WORKDIR"`
+      4. If that also fails and the repo may be private, try the GitHub CLI,
+         which uses existing credentials:
+         `gh repo clone "{{repo_path}}" "$WORKDIR"`
+      5. The exploration root is now `$WORKDIR`. Report the temp path once at
+         the top of your findings so the user can inspect it, then explore it
+         exactly as you would a local repo. Leave the clone in place.
+
+      Do NOT use `--depth 1` or any other shallow clone. Shallow clones truncate
+      commit history and would silently produce wrong commit-authorship data.
+
+      If ALL clone attempts fail, go to the FAILURE REPORT below.
+
+      ---
+
+      ### MODE C — LOCAL PATH
+
+      The exploration root IS that path. Explore it in place with your normal
+      filesystem tools. Nothing to set up.
+
+      ---
+
+      ### FAILURE REPORT (Modes A and B only)
+
+      If the repository could not be reached, stop immediately. Do not explore
+      anything, do not substitute a different directory, and do not infer what
+      the project might contain from its URL or name. Your ENTIRE response must
+      be:
+
+          REPOSITORY UNAVAILABLE — COULD NOT READ REPOSITORY
+          Target: {{repo_path}}
+          Access mode attempted: [GitHub API | clone]
+          Commands attempted: [list them]
+          Error output: [paste the actual error]
+          Likely cause: [e.g. repo does not exist, private repo and `gh` is not
+          authenticated, `gh` not installed, API rate limit exceeded, network
+          unreachable, git not installed]
+
+      A clear failure report is the correct and useful output here. A guess
+      about the repo's contents is not.
+
+      ## EVIDENCE GATHERING
 
       Your job is to gather EVIDENCE for a product assessment. You are not
       writing the assessment — you are collecting the raw material for it.
+
+      Everything below operates on the repository you resolved access to in
+      step 0, whichever mode you used. The evidence required is identical in
+      all three modes — only HOW you read the files differs.
 
       Read the README, docs, code comments, config files, tests, CI configs,
       issue templates, CHANGELOG, and recent commit messages.
@@ -150,19 +434,34 @@ steps:
          - Any signal about which product team or org would consume this work.
 
       7. COMMIT AUTHORSHIP
-         - Run `git log --format="%an" | sort | uniq -c | sort -rn | head -10`
-           (or read the git log directly) to produce a ranked list of commit
-           authors by commit count.
-         - Report: author name, commit count, and percentage of total commits
-           for the top contributors (up to 5).
+         Produce a ranked list of commit authors by commit count. How you get
+         it depends on the access mode from step 0:
+
+         - **MODE A (GitHub API):** there is no local git history, so use the
+           commits endpoint:
+             `gh api "repos/<owner>/<repo>/commits?per_page=100" --jq '.[].commit.author.name' | sort | uniq -c | sort -rn | head -10`
+           This returns AT MOST the 100 most recent commits. If the repo has
+           more than 100 commits, say so explicitly and label the ranking
+           "based on the 100 most recent commits". Do NOT present a truncated
+           ranking as if it covered full history.
+         - **MODES B and C (clone / local path):** read the git log directly:
+             `git log --format="%an" | sort | uniq -c | sort -rn | head -10`
+           This covers full history.
+
+         - Report: author name, commit count, and percentage of counted commits
+           for the top contributors (up to 5). State which basis the counts are
+           on (full history vs. 100 most recent).
          - Also note any author listed as owner in CODEOWNERS, MAINTAINERS,
            or similar files if present.
-         - If git history is unavailable or the repo has no commits, report
+         - If commit history is unavailable or the repo has no commits, report
            "NOT FOUND".
 
       8. REPOSITORY REMOTE URL
-         - Make a best-effort attempt to determine the repository's canonical
-           remote URL. Check, in order:
+         - If step 0 classified {{repo_path}} as a URL (Case A or Case B), that
+           URL IS the canonical remote. Report it verbatim, sourced as
+           "repository URL supplied as repo_path". You are done with this item.
+         - Otherwise, make a best-effort attempt to determine the repository's
+           canonical remote URL. Check, in order:
            a. `.git/config` (the [remote "origin"] url entry)
            b. README badges, clone instructions, or install commands that embed
               a repository URL
@@ -205,6 +504,21 @@ steps:
 
       REPO FINDINGS FROM EXPLORATION:
       {{repo_findings}}
+
+      ---
+
+      ## PRECONDITION — CHECK THIS BEFORE ANYTHING ELSE
+
+      If the findings above contain "REPOSITORY UNAVAILABLE", the repository was
+      never read. Do NOT write a 1-pager, do NOT write any file, and do NOT fill
+      the gaps with [AI Recommendation] hypotheses — a document built entirely on
+      inference about a repo nobody opened is worse than no document.
+
+      Instead, report the failure to the user verbatim: the target, what was
+      attempted, the error, and the likely fix (e.g. authenticate `gh`, check the
+      URL, confirm access). Then stop.
+
+      Otherwise, continue.
 
       ---
 
