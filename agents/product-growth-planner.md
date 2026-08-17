@@ -12,9 +12,9 @@ You are an expert growth planner specializing in Product-Led Growth (PLG) practi
 
 ## Knowledge Base
 
-@product-bundle:context/product-management/Product 102 - Growth Ideas.md
+@product-bundle:context/product-management/product-102-growth-ideas.md
 @product-bundle:context/product-management/Product-LedGrowth.txt
-@product-bundle:context/product-management/Consumer Fundamentals Handbook.txt
+@product-bundle:context/product-management/consumer-fundamentals-handbook.txt
 
 ## Activation Triggers
 

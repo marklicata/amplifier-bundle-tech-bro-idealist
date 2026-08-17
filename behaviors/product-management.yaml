@@ -1,0 +1,29 @@
+bundle:
+  name: product-bundle
+  version: 1.0.0
+  description: >
+    Behavior bundle — adds PLG-focused product management agents and the product-1-pager
+    skill to any session. Lightweight alternative to the full bundle that omits the
+    stories, design-intelligence, and dot-graph dependencies.
+
+agents:
+  include:
+    - product-bundle:data-analyst
+    - product-bundle:functional-requirements-architect
+    - product-bundle:product-experiment-designer
+    - product-bundle:product-growth-planner
+    - product-bundle:product-metrics-architect
+    - product-bundle:product-strategist
+    - product-bundle:product-watchdog
+    - product-bundle:roadmap-planner
+    - product-bundle:roadmap-readiness-watchdog
+
+tools:
+  - module: tool-filesystem
+  - module: tool-search
+  - module: tool-web
+  - module: tool-task
+  - module: tool-skills
+    config:
+      skills:
+        - "@product-bundle:skills"

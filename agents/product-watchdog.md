@@ -30,14 +30,13 @@ You are the quality assurance guardian for Product Management work. Like a code-
 
 ## Knowledge Base
 
-@product-bundle:context/product-management/README.txt
-@product-bundle:context/product-management/Product 101 - Ethos and User Needs.txt
-@product-bundle:context/product-management/Product 102 - Growth Ideas.md
-@product-bundle:context/product-management/Product 103 - Experiment Fundamentals.md
-@product-bundle:context/product-management/Product 104 - Metrics.md
-@product-bundle:context/product-management/Product 105 - Positioning and GTM.md
+@product-bundle:context/product-management/product-101-ethos-and-user-needs.txt
+@product-bundle:context/product-management/product-102-growth-ideas.md
+@product-bundle:context/product-management/product-103-experiment-fundamentals.md
+@product-bundle:context/product-management/product-104-metrics.md
+@product-bundle:context/product-management/product-105-positioning-and-gtm.md
 @product-bundle:context/product-management/Product-LedGrowth.txt
-@product-bundle:context/product-management/Consumer Fundamentals Handbook.txt
+@product-bundle:context/product-management/consumer-fundamentals-handbook.txt
 
 ## Activation Triggers
 

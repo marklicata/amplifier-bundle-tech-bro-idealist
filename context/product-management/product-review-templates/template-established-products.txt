@@ -1,76 +1,0 @@
-
-[Cannot edit above]
-
-Guide:
-P365 is a product-led growth forum: we focus on product ethos of creating software that “sells itself”.  This means that products strive for organic ways to activate, retain and
-
-
-PRODUCT 365 PRE-READ: <TOPIC NAME>
-<date, product, presenters>
-Only products in the hyper-growth or mature phase should be using this template. Products or product features in incubation (early phase) or product-market fit (growth phase) should be using the nascent products template. Refer to the Consumer Fundamentals handbook for growth phases and criteria.
-
-GOALS FOR P365
-* What goals do you have for your P365 session? What would a successful review look like?
-PRODUCT OVERVIEW / BACKGROUND
-* What is the North Star or Value Prop of the product? What unmet or unfulfilled needs will it solve?
-* What unique, differentiated value does the product bring? Avoid vague, visionary statements; be specific!
-* What are the key segments and audiences for your product? Not SMB or IT Admin, but a specific user with specific needs. How do their unmet or unfulfilled needs differ by device type (web vs. desktop vs. mobile vs. tablet)?
-* What are the critical user journeys for these users? How will the critical user journeys achieve the value prop for your audience? What funnels+metrics tell you that users are completing these journeys successfully?
-* How do these critical user journeys differ by device type (web vs. desktop vs. mobile vs. tablet)?
-* What user actions are associated with users being engaged in your product?
-* What is the falsifiable hypotheses1 and product strategy to achieve the north star above? How will you leverage Microsoft’s strengths and competitive advantages?
-SINCE THE LAST REVIEW (IF APPLICABLE)
-* Provide a summary of key deliverables and impact that were shared in the last review.
-* What falsifiable hypothesis2 did you think would work and did, and what did you think would work and didn’t? What was learned that was not known in the last review?
-* Highlight any important changes to the falsifiable hypothesis, product vision, and go-to-market plans.
-MARKET ANALYSIS
-* Provide a competitive analysis for your product. Who are the main competitors and why? How does your product and performance compare? What is the market share for your product and how has it changed?
-* Provide a market analysis for your product. What market conditions exist that affect the outlook of your product? How have your users and their behaviors changed: basic environment, needs, market trends, etc.?
-* Provide a summary of user research surrounding your product. What are key insights that the team has learned and is folding into their product plans?
-METRICS
-* Provide a list of the metrics that the team is optimizing for: product experiences, funnels, loops, critical user journeys (CRJs), etc.?
-* The following 8 metrics are REQUIRED to be included and reviewed with the SLT.
-* All metrics should include trends (MoM, YoY) and if applicable VTF, VTB, and/or VTOKR. Additionally, wherever possible these metrics should be broken out by device type.
-
-AreaRequired MetricDescriptionAcquisition / User GrowthMAUNumber of users active in the product over a 28 day period that we can monetize from.Quick Ratio3The ratio of new + returning users divided by churned users. A ratio >1 indicates growth; <1 indicates decline.User EngagementMEU
-(cohort analyss)Number of users engaged and getting value from the product over a 28 day period.P95 latency of top 3 workloadsThe P95 latency of the top 3 service workloads in the product.User Retention7d Returning MAU (cohort analysis)Number of users seen in the product during two consecutive 7 day periods.28d Returning MAU (cohort analysis)Number of users seen in the product during two consecutive 28 day periods.Market ShareMarket Share% of the total market that the product has penetrated.Conversion / MonetizationARPUAverage Revenue Per User (ARPU) of users in the product.
-Note: this is not a revenue review; focus on product health and growth. You are welcome to add additional metrics that will give the SLT a view into the health of your product. Example metrics can be found in Appendix A. But no eye charts. Data presented should be concise and tell a clear story.
-
-GROWTH INVESTMENTS
-* Describe the external headwinds or opportunities that have the potential to impact the metrics above.
-* List the top 3-5 milestones / investments that will affect the metrics above including estimated impact and expected delivery timelines.
-* What are the falsifiable hypotheses4 for these investments? i.e. what negative result would change your product direction? What metrics and counter-metrics5 are important?
-* Where applicable, include go-to-market plans and how your target audience will discover these new features.
-* Where can the leaders in P365 help? Activate the SLT; what problem/gap/issue can they help solve?
-OPTIONAL ELEMENTS
-* What funnels are crucial to the product’s success?
-* What loops are crucial to the product? For example, viral loops and network effects driving user growth.
-
-
-APPENDIX A: EXAMPLE METRICS ASSOCIATED WITH EACH FUNNEL STAGE
-AreaExample MetricsDescriptionAcquisition / User GrowthNew UsersNumber of new users active in the product over a 28 day period.Monthly Active Users (MAU)Number of users active in the product during a given month.Weekly Active Users (WAU)Number of users active in the product during a given week.Daily Active Users (DAU)Number of users active in the product during a given day.Quick Ratio6The ratio of new + returning users divided by churned users. A ratio >1 indicates growth; <1 indicates decline.Viral AcquisitionNumber of users acquired to the product via user generated growth like shares or invites. Not traditional Microsoft GTM motions.Monthly Active Devices (MAD)Number of active devices during a given month. Can also be a variation like PBMAD.User EngagementMonthly Engaged Users (MEU) (cohort analysis)Number of users engaged in the product during a given month.Weekly Engaged Users (WEU)Number of users engaged in the product during a given week.Daily Engaged Users (DEU)Number of users engaged in the product during a given day.P95 latency of top 3 workloadsThe P95 latency of the top 3 service workloads in the product.Time SpentThe time spent in a product or doing a specific set of tasks. Usually measured in minutes.Net Sentiment Score (NSS)The % of positive sentiment minus the % of negative sentiment from feedback looks like surveys.Net Promotor Score (NPS)How likely users are to recommend a product on a scale of 0-10 measured through regular surveys.User RetentionDAU / MAU %% of Monthly Active Users who are using the product Daily.7d / 14d / 28d / 60d Returning MAU (cohort analysis)Number of monthly active users seen in two consecutive [x] day periods.
-A MoM cohort analysis should be provided for this metric.Churned UsersNumber of users who were not seen in the product during two consecutive 28 day periods.Market ShareMarket Share% of the total market that the product has penetrated.Share on WindowsOn Windows devices, what is the share of users using your product vs. competitors. For example: Browser Share of Minutes in Edge; Bing search share vs. Google; Steam vs. Game PassConversion / MonetizationCustomer Acquisition Cost (CAC)The cost to acquire a single new user to the product.LifeTime Value (LTV)The revenue made from a single user in the product over the customer’s lifespan.Average Revenue per User (ARPU)Revenue generated by each user in a product. Usually measured as total revenue or average revenue per user.Gross AddsThe total number of new subscribers added via the product over a period of time; usually monthly.End of Period Subscribers (EOP)The number of subscribers measured at a moment in time. Including both new subscriber adds and subscribers churned.Advertising metrics.
-Impressions
-Cost per Click (CPC)
-Cost per Acquisition
-Number of Ads that were surfaced to users.
-The average cost of a user clicking on an Ad.
-The average cost of a user clicking on an Ad and purchasing.Ad Cost per Acquisition (CPA)The average cost of a user clicking on an Ad and purchasing.
-1 A hypothesis can’t be right unless it can be proven wrong
-2 A hypothesis can’t be right unless it can be proven wrong
-3 Quick Ratio as a Shortcut to Understand Product Growth
-4 A hypothesis can’t be right unless it can be proven wrong
-5 PMs & Metrics: Counter Metrics
-6 Quick Ratio as a Shortcut to Understand Product Growth
----------------
-
-------------------------------------------------------------
-
-
-
----------------
-
-------------------------------------------------------------
-
-
-

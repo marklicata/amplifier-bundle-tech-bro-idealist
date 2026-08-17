@@ -1,103 +1,0 @@
-
-[Product name]
-Presenting team: [presenting team names…]
-
-Section 0: Product Placemat
-Product basics to give everyone simple context of your product before diving into the ethos.
-Segment(s)SLT or MS Plus Metric(s)CompetitorsAge & Share of MarketList all addressable market segments and which ones you’re covering today.What SLT or Microsoft Plus metric(s) does the product contribute to? Name and current value.Established and/or startupsHow many years has the product been active? And what % of the total market has the product penetrated?TAM or SAMUser BaseUser GrowthReturning usersWW addressable market for your specified segmentDAU / WAU / MAU%% growth in DAU / WAU / MAU over last 12 monthsYYYM
-Note: this section will be included in the P365 invite and the pre-read emails that go to the forum attendees. It will give everyone a quick snapshot of the product before diving into details
-
-
-
-Section 1: Metrics
-This section should be 1-2 pages of data with graphs/data showcasing product metrics. The following graphs are REQUIRED metrics covering user growth, engagement, and SLT contribution. You are welcome to edit with data from your product. If data is unavailable, simply state “data unavailable”. 
-
-Each metric should include OKR targets (if applicable). Explanations of trend changes are welcomed but avoid lengthy commentary.
-
-User Growth
-
-New users: [definition]
-
-Returning users: [definition]
-
-Resurrected users: [definition]
-
-Lapsed users: [definition]
-Product Funnel
-
-Reach: [definition]
-
-Onboarding: [definition - every product should have a measure of actions that “prime” a user for active use] 
-
-Engagement: [definition]
-
-Retention: [definition]
-
-Monetization: [definition]
-New Users
-
-Engaged Users
-
-Engaged Users: [definition]
-Retained Users
-
-Retained Users: [definition – use whatever definition is appropriate for the product. 7d/30d/90d/etc.] 
-Contribution to SLT or Microsoft Plus metrics
-
-1.) What SLT metric(s) does the product contribute to?
-
-2.) What impact has the product had to those metrics over the last 12 months?
-Additional OPTIONAL metrics are included on the Metrics page of the Product 365 SharePoint site. Teams are empowered to add as many or as few of these as they would like to support their data story.
-
-
-
-Section 2: Ethos and Growth
-This section should be no more than half a page.
-
-Ethos
-In 3 sentences or less, provide the following details about the ethos of the product.
-* What is the problem this product is trying to solve?
-* Who is the target audience for the product and why?
-* How will you measure success in terms of SLT or Microsoft Plus metrics?
-
-Microsoft Plus
-How does the product contribute to Microsoft Plus?
-
-Thesis for Growth
-Based on your ethos, metrics, and insights tell us about the top 1-3 theses for growth in the product.
-* This could be new user growth through virality, deeper engagement through onboarding, better retention through gamification, or something else.
-* What insights (data, research, signals) support this thesis? Teams that can say "the data is telling us to do this, not that" have been celebrated.
-* Show how the product contributes to Ecosystem Levers. Those are the core experiences all products must contribute to.
-
-Section 3: Growth investments
-This section should be no more than 2 pages.
-
-For each thesis, tell us about 1-3 investments the team is making. Big bets or “moon shots” are encouraged. Teams have been criticized for doing smaller experiments that don’t appear to be big enough swings. For each investment, include the following detail.
-* Background: What is the title of the investment? How did you identify the investment? What data or insights guided the team?
-* Falsifiable hypothesis: What is the falsifiable hypothesis? What would prove the hypothesis false?
-* Estimated impact: What is the estimated impact to product metrics in section 1 or SLT Metrics?
-* Go to market: When will this investment go to market? (end users, not insider rings)
-* User experience: What does the experience or flow look like to the end user?
-
-In the presentation, show the user journey/flow for each thesis and/or investment. What will consumers see / experience in the product?
-
-Optional content:
-Tell us about up to 2 important growth experiments that you ran and what you learned. If you had a previous P365 on the topic please recap previous thesis and learnings.
-
-
-Section 4: SLT Asks
-This section should be no more than half a page. In as few words as possible tell us:
-* What is keeping the product from achieving growth?
-* Where is there opportunity to accelerate growth? Where could you / should you double down?
-
-
-
-
-
-
-
-
-
-
-
-

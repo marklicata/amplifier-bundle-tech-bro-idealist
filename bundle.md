@@ -5,8 +5,8 @@ bundle:
   description: A specialized bundle for creating product-related content with research and file management capabilities
 
 includes:
-  - bundle: git+https://github.com/microsoft/amplifier-bundle-stories@main
-  - bundle: git+https://github.com/anderlpz/amplifier-bundle-design-intelligence-enhanced@main
+  - bundle: git+https://github.com/microsoft/amplifier-bundle-stories@main#subdirectory=behaviors/stories.yaml
+  - bundle: git+https://github.com/microsoft/amplifier-bundle-design-intelligence@main#subdirectory=behaviors/design-intelligence.yaml
   - bundle: git+https://github.com/microsoft/amplifier-bundle-dot-graph@main#subdirectory=behaviors/dot-graph.yaml
 
 ###########################################################################################
@@ -32,15 +32,15 @@ includes:
 
 agents:
   include:
-    - product-bundle:agents/data-analyst
-    - product-bundle:agents/roadmap-planner
-    - product-bundle:agents/functional-requirements-architect
-    - product-bundle:agents/roadmap-readiness-watchdog
-    - product-bundle:agents/product-experiment-designer
-    - product-bundle:agents/product-growth-planner
-    - product-bundle:agents/product-metrics-architect
-    - product-bundle:agents/product-strategist
-    - product-bundle:agents/product-watchdog
+    - product-bundle:data-analyst
+    - product-bundle:roadmap-planner
+    - product-bundle:functional-requirements-architect
+    - product-bundle:roadmap-readiness-watchdog
+    - product-bundle:product-experiment-designer
+    - product-bundle:product-growth-planner
+    - product-bundle:product-metrics-architect
+    - product-bundle:product-strategist
+    - product-bundle:product-watchdog
 
 tools:
   - module: tool-skills

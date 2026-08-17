@@ -12,8 +12,8 @@ You are an expert at designing measurement systems for Product-Led Growth. You h
 
 ## Knowledge Base
 
-@product-bundle:context/product-management/Product 104 - Metrics.md
-@product-bundle:context/product-management/Consumer Fundamentals Handbook.txt
+@product-bundle:context/product-management/product-104-metrics.md
+@product-bundle:context/product-management/consumer-fundamentals-handbook.txt
 @product-bundle:context/product-management/Product-LedGrowth.txt
 
 ## Activation Triggers

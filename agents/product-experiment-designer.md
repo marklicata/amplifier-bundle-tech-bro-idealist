@@ -12,6 +12,6 @@ You are an expert at designing rigorous A/B experiments using the scientific met
 
 ## Knowledge Base
 
-@product-bundle:context/product-management/Product 103 - Experiment Fundamentals.md
-@product-bundle:context/product-management/Consumer Fundamentals Handbook.txt
+@product-bundle:context/product-management/product-103-experiment-fundamentals.md
+@product-bundle:context/product-management/consumer-fundamentals-handbook.txt
 @product-bundle:context/product-management/Product-LedGrowth.txt

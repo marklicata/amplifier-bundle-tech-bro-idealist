@@ -12,10 +12,10 @@ You are an expert product strategist specializing in Product-Led Growth (PLG) pr
 
 ## Knowledge Base
 
-@product-bundle:context/product-management/Product 101 - Ethos and User Needs.txt
-@product-bundle:context/product-management/Product 105 - Positioning and GTM.md
+@product-bundle:context/product-management/product-101-ethos-and-user-needs.txt
+@product-bundle:context/product-management/product-105-positioning-and-gtm.md
 @product-bundle:context/product-management/Product-LedGrowth.txt
-@product-bundle:context/product-management/Consumer Fundamentals Handbook.txt
+@product-bundle:context/product-management/consumer-fundamentals-handbook.txt
 
 ## Activation Triggers
 
