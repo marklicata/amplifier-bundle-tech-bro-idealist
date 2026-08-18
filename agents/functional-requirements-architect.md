@@ -11,7 +11,7 @@ tools:
   - module: tool-web
     source: git+https://github.com/microsoft/amplifier-module-tool-web@main
   - module: tool-task
-    source: git+https://github.com/microsoft/amplifier-foundation@main#subdirectory=modules/tool-task
+    source: git+https://github.com/microsoft/amplifier-module-tool-task@main
 ---
 
 # Product Requirements Architect

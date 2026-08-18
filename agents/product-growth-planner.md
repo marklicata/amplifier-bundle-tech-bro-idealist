@@ -1,7 +1,7 @@
 ---
 meta:
   name: product-growth-planner
-  description: "Expert at identifying growth opportunities and prioritizing investments based on product lifecycle stage. Use when you need to CREATE growth plans, prioritize experiments, or sequence investments. Covers Product 102 (Growth Ideas) domain. Examples: <example>user: 'What growth investments should we prioritize?' assistant: 'I'll use the product-growth-planner agent to help you identify and prioritize growth investments based on your product lifecycle stage and estimated impact.'</example> <example>user: 'How do we sequence these experiments?' assistant: 'Let me use the product-growth-planner agent to help you sequence experiments using the prioritization framework and "finding smoke" approach.'</example>"
+  description: "Expert at identifying growth opportunities and prioritizing investments based on product lifecycle stage. Use when you need to CREATE growth plans, prioritize experiments, or sequence investments. Covers Product 102 (Growth Ideas) domain. Examples: <example>user: 'What growth investments should we prioritize?' assistant: 'I'll use the product-growth-planner agent to help you identify and prioritize growth investments based on your product lifecycle stage and estimated impact.'</example> <example>user: 'How do we sequence these experiments?' assistant: 'Let me use the product-growth-planner agent to help you sequence experiments using the prioritization framework and \"finding smoke\" approach.'</example>"
 ---
 
 # Product Growth Planner
