@@ -13,8 +13,8 @@
 #   - self                 (writing, via model_role: writing)
 #
 # Context variables:
-#   repo_path      (REQUIRED) Location of the repository to analyze. Accepts
-#                             any of three forms, each explored differently:
+#   repo_path      (REQUIRED unless repo_paths is provided) The repository to
+#                             analyze. Three accepted forms:
 #                               a. GitHub URL (https://github.com/owner/repo)
 #                                  -> browsed remotely via the `gh` CLI and the
 #                                     GitHub API. No clone, no disk usage.
@@ -24,6 +24,12 @@
 #                                     there.
 #                               c. Local filesystem path
 #                                  -> explored in place.
+#   repo_paths     (optional) Comma-separated or newline-separated list of
+#                             repos. Each entry follows the same three-form
+#                             syntax as repo_path. When non-empty, ALL listed
+#                             repos are explored and their findings synthesized
+#                             into one unified 1-pager — useful for multi-repo
+#                             products. Takes precedence over repo_path.
 #   output_format  (optional) "markdown" (default) or "json".
 #   researcher     (optional) Name of the researcher / project owner.
 #                             Blank renders as "Unknown".
@@ -47,6 +53,10 @@
 #     repo_path=/path/to/repo, output_format=json, researcher=Jane Doe, \
 #     git_url=https://github.com/org/repo"
 #
+#   # Multiple repos (comma-separated) — analyzed and synthesized into one 1-pager
+#   amplifier run "execute recipes/product-1-pager.yaml with \
+#     repo_paths=https://github.com/org/repo-core,https://github.com/org/repo-sdk,/local/path/repo-ui"
+#
 # Private repositories:
 #   GitHub repos (browsed via `gh api`) require an authenticated `gh` CLI —
 #   check with `gh auth status`. Other hosts are cloned, which requires
@@ -64,6 +74,35 @@
 # =============================================================================
 # CHANGELOG
 # =============================================================================
+#
+# v1.4.0 (2026-08-19):
+#   - NEW FEATURE: Multi-repo support via `repo_paths` context variable
+#     * `repo_paths` accepts a comma-separated or newline-separated list of repo
+#       paths/URLs, each following the same three-form syntax as repo_path
+#       (GitHub URL, other Git URL, local filesystem path). When non-empty, it
+#       takes precedence over repo_path.
+#     * The explore-repo step (STEP -1) now parses the list and analyzes ALL
+#       repos independently, organizing evidence under per-repo section headers
+#       (`=== REPO N of M: [identifier] ===`) and running the full 8-item
+#       evidence checklist for each.
+#     * The write-1-pager step synthesizes multi-repo findings into one unified
+#       1-pager — treating all listed repos as one system. This is the correct
+#       shape for multi-repo products where the product story spans repos.
+#   - NEW FEATURE: Stage-calibrated content guard in write-1-pager
+#     * ROOT CAUSE: [AI Recommendation] hypothesis generation on Q1–3 and Q7
+#       was unconstrained by stage. On Research Idea projects (no users, no
+#       deployment), the writing step would reach for PLG frameworks from model
+#       training — funnels, cohort retention, CAC/LTV, growth loops — and
+#       produce confident-sounding content with no empirical basis under it.
+#     * THE FIX: a mandatory stage gate evaluated before any content is written.
+#       It restricts hypothesis framing to what the classified stage supports:
+#       Research Idea → problem framing and early validation milestones only;
+#       Prototype → PLG framing only when actual user data exists in the findings;
+#       Product → no additional restrictions.
+#     * WHY THIS MATTERS: content calibrated to the wrong stage signals the
+#       author doesn't know the difference between research and shipped product.
+#       A 1-pager citing retention curves for a two-week prototype destroys
+#       its own credibility before the second bullet.
 #
 # v1.3.0 (2026-08-05):
 #   - IMPROVEMENT: GitHub URLs are now browsed remotely via the `gh` CLI and the
@@ -216,8 +255,8 @@
 # =============================================================================
 
 name: "product-1-pager"
-description: "Analyze a repository (local path, GitHub URL browsed via the GitHub API, or any other Git URL via clone) and generate a concise, senior-leader-ready product 1-pager covering stage, problem, users, evidence, ownership, and success criteria. Outputs markdown or JSON."
-version: "1.3.0"
+description: "Analyze one or more repositories (local path, GitHub URL via GitHub API, or any Git URL via clone) and generate a concise, senior-leader-ready product 1-pager. Covers stage, problem, users, evidence, ownership, and success criteria. Supports multi-repo synthesis via repo_paths. Outputs markdown or JSON."
+version: "1.4.0"
 tags: ["product", "1-pager", "research", "repo-analysis", "product-sense"]
 
 context:
@@ -235,6 +274,14 @@ context:
   # Optional: researcher / project owner name. Blank renders as "Unknown".
   researcher: ""
 
+  # Optional: analyze multiple repositories and synthesize into one 1-pager.
+  # Accepts a comma-separated or newline-separated list of paths/URLs. Each entry
+  # follows the same three-form syntax as repo_path (GitHub URL, other Git URL,
+  # or local filesystem path). When non-empty, ALL listed repos are explored and
+  # their findings synthesized into one unified document — useful for multi-repo
+  # products. Takes precedence over repo_path when non-empty.
+  repo_paths: ""
+
   # Optional: DISPLAY-ONLY remote URL for the Repository header. This is never
   # fetched or cloned — to analyze a hosted repo, put its URL in repo_path.
   # Blank triggers best-effort detection, falling back to repo_path.
@@ -249,9 +296,31 @@ steps:
   - id: "explore-repo"
     agent: "foundation:explorer"
     prompt: |
-      Repository to analyze: {{repo_path}}
+      ## STEP -1 — DETERMINE THE REPO LIST (do this before anything else)
 
-      ## STEP 0 — RESOLVE THE ACCESS MODE (do this first)
+      Check both inputs:
+        repo_paths: "{{repo_paths}}"
+        repo_path:  "{{repo_path}}"
+
+      **If `{{repo_paths}}` is non-empty:**
+        - It is your AUTHORITATIVE repo list. Parse it as comma-separated entries.
+          Also accept newline-separated. Trim whitespace from each entry.
+        - You will analyze EACH entry. Apply STEP 0 classification (Case A / B / C)
+          independently to each one.
+        - After analyzing all repos, organize your findings with a clear header
+          `=== REPO N of M: [identifier] ===` before each repo's evidence section.
+        - Run the full EVIDENCE GATHERING checklist (items 1–8) independently for
+          each repo.
+        - At the very top of your output, state: "Analyzing N repos:" followed by
+          a numbered list of each identifier.
+
+      **If `{{repo_paths}}` is empty:**
+        - Analyze only the single repo: {{repo_path}}
+        - No per-repo section headers are needed — continue as normal.
+
+      ---
+
+      ## STEP 0 — RESOLVE THE ACCESS MODE (apply to each repo)
 
       The value above is one of THREE things. Classify it, then use the matching
       access mode. Check the cases in this order — the first match wins.
@@ -495,12 +564,12 @@ steps:
       You are writing a product 1-pager for an engineering research project.
       The audience is a senior leader who has 90 seconds and no context.
 
-      Repository analyzed: {{repo_path}}
-
       INPUTS:
       - Output format requested: "{{output_format}}"
       - Researcher (may be blank): "{{researcher}}"
       - Git URL (may be blank): "{{git_url}}"
+      - repo_paths (if set, multiple repos were analyzed): "{{repo_paths}}"
+      - repo_path (single repo or fallback): "{{repo_path}}"
 
       REPO FINDINGS FROM EXPLORATION:
       {{repo_findings}}
@@ -538,6 +607,44 @@ steps:
 
       Be honest. Most research repos are Research Idea or Prototype.
       Over-classifying destroys the credibility of the whole document.
+
+      ## STAGE-CALIBRATED CONTENT GUARD
+
+      Apply this BEFORE writing any content. Your stage classification determines
+      what hypotheses are appropriate. This guard prevents AI-generated framing
+      that presupposes users, metrics, or PLG dynamics that have no empirical
+      basis in the findings.
+
+      **Research Idea — strict restrictions:**
+      This stage has no deployed users, no production traffic, and no funnel data.
+      Do NOT produce PLG framework content — not even as [AI Recommendation]
+      hypotheses. Prohibited framing includes: funnel analysis, cohort retention
+      curves, CAC/LTV estimates, A/B test designs, growth loops, activation rates,
+      DAU/MAU projections, and any metric that presupposes an active user base.
+
+      [AI Recommendation] hypotheses at this stage MUST stay within:
+      - Q1 (problem): frame around what pain the idea addresses and for which role —
+        no user-data claim required
+      - Q2 (users): name a specific role or team segment the idea might serve —
+        clearly flagged as a hypothesis, not a finding
+      - Q3 (needs/wants): describe functional requirements that role plausibly has —
+        no engagement or retention metrics
+      - Q7 (success): early validation milestones only — e.g. "a pilot team can
+        accomplish X without Y friction" — NOT product growth metrics such as
+        "30% retention lift" or "DAU grows to Z", which have no basis at this stage
+
+      **Prototype — conditional restrictions:**
+      PLG framing (retention, engagement metrics, growth loops, funnel analysis) is
+      appropriate ONLY if the repo findings contain actual user data: real user
+      feedback quotes, usage numbers, pilot engagement reports, or A/B test results.
+      If the findings contain no such data, treat Q4 as "Unknown — needs real data
+      signal" and keep Q1–3 and Q7 hypotheses grounded in observed project signals,
+      not assumed product dynamics.
+
+      **Product — no restrictions:**
+      Full PLG framework content is appropriate when grounded in the repo findings.
+      Continue to label all content that extends beyond the evidence with
+      [AI Recommendation — needs your review].
 
       ## METADATA FIELDS
 
@@ -738,8 +845,11 @@ steps:
       These apply to BOTH formats identically. The format changes how the
       content is serialized — it never changes the content itself.
 
-      - Replace [Project Name] / "project_name" with the actual project name
-        from the repo.
+      - Replace [Project Name] / "project_name" with the actual project name.
+        When multiple repos were analyzed (repo_paths was non-empty), use the
+        overarching product or system name if one is evident across the repos.
+        If no overarching name is clear, use the primary repo's name with a
+        parenthetical note like "(+ N other repos)".
       - Plain language only. No jargon, no acronyms without expansion, no
         marketing voice, no hedging filler.
       - Every factual claim must trace back to the repo findings. If the

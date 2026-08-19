@@ -2,12 +2,13 @@
 name: product-1-pager
 description: >
   Generate a concise product 1-pager for an engineering research project by pointing
-  at a repository. Answers the seven questions senior leaders need to understand how
-  the work connects to real products and users. Use when someone says "create a product
-  1-pager", "analyze this project for product fit", "where does this fit in our
-  product portfolio", or "what's the product story for this repo".
+  at one or more repositories. Answers the seven questions senior leaders need to
+  understand how the work connects to real products and users. Use when someone says
+  "create a product 1-pager", "analyze this project for product fit", "where does this
+  fit in our product portfolio", or "what's the product story for this repo". Accepts
+  multiple repos for multi-repo products.
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
 context: fork
 ---
 
@@ -21,9 +22,18 @@ framework below, and return a concise 1-pager that a senior leader can read in
 
 ---
 
-## Step 1 — Explore the Repo
+## Step 1 — Determine the Repo List and Explore
 
-Delegate to `foundation:explorer` with the repo path from the user's message.
+**First: check whether the user provided one repo or multiple.**
+
+If the user provided multiple repos (comma-separated, newline-separated, or listed
+individually), you will explore ALL of them. Analyze each one independently and
+organize your findings under `=== REPO N of M: [identifier] ===` headers. Run the
+full evidence checklist for each repo.
+
+If only one repo was provided, explore it as normal — no per-repo headers needed.
+
+**Delegate to `foundation:explorer`** with all repo paths.
 
 Ask the explorer to find and report (not interpret — just facts):
 
@@ -57,6 +67,33 @@ Pick EXACTLY ONE based on evidence — not on what the team hopes it will become
 
 > **Be honest.** Most research repos are Research Idea or Prototype.
 > Over-classifying destroys the document's credibility with senior leaders.
+
+### Stage-Calibrated Content Guard
+
+Apply this BEFORE writing any content. Your classified stage determines what
+hypotheses are appropriate. This prevents AI-generated content that presupposes
+users, metrics, or PLG dynamics that have no empirical basis.
+
+**Research Idea — strict restrictions:**
+The project has no deployed users and no production traffic. Do NOT produce PLG
+framework content — not even as [AI Recommendation] hypotheses. Prohibited framing
+includes: funnel analysis, cohort retention, CAC/LTV estimates, A/B test designs,
+growth loops, activation rates, and any metric that presupposes an active user base.
+
+[AI Recommendation] hypotheses at this stage MUST stay within:
+- Q1 (problem): what pain the idea addresses, for which role — no user data needed
+- Q2 (users): a specific role or team segment the idea might serve — flagged as hypothesis
+- Q3 (needs/wants): functional requirements that role plausibly has — no engagement metrics
+- Q7 (success): early validation milestones only — e.g. "a pilot team can accomplish X" —
+  NOT growth metrics like "30% retention lift" which have no basis at this stage
+
+**Prototype — conditional restrictions:**
+PLG framing is appropriate ONLY if the findings contain actual user data: real user
+feedback, usage numbers, pilot engagement reports, or A/B test results. Without such
+data, treat Q4 as "Unknown — needs real data signal."
+
+**Product — no restrictions:**
+Full PLG framework content is appropriate when grounded in the repo findings.
 
 ### The 7 Questions
 
@@ -152,7 +189,10 @@ the template shows one. Structure serves the content, not the other way around.
 3. [Third]
 ```
 
-Replace [Project Name] with the actual project name from the repo.
+Replace [Project Name] with the actual project name from the repo. When multiple
+repos were analyzed, use the overarching product or system name if one is evident.
+If no overarching name is clear, use the primary repo's name with a note like
+"(+ N other repos)".
 
 The Open Questions are the most valuable section for a low-product-sense engineering
 team — make them the questions that move the work forward, not trivia.
