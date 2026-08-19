@@ -22,7 +22,6 @@ tools:
   - module: tool-filesystem
   - module: tool-search
   - module: tool-web
-  - module: tool-task
   - module: tool-skills
     config:
       skills:
