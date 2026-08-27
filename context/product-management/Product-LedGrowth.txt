@@ -4,24 +4,24 @@ Author: Mark Licata, Revised Sept. 2022
 PLG companies are valued 2x higher than the SaaS median with a 6% higher growth rate1
 
 Introduction	
-Over the last decade, tech-savvy users have fueled a shift in software products becoming more intuitive, powerful, affordable, and easy to use. This is sometimes called the ìconsumerization of productsî. In the B2B world corporate buyers have shifted from asking sales+support what products to buy to asking the front-line workers what products theyíd prefer to use. Additional market conditions include the following:
-* Buyers want to self-educate rather than speak to sales; 75% of B2B IT buyers†prefer to buy through an app or website.2
-* Users demand immediate gratification and quickly give up on products that donít provide it. 21% of users open a mobile app once and then abandon. And by day 90,†71% of app users†have churned completely.3,4
-* 80% of people are more likely to do business with a company that offers personalization. Salesforce reports 52% of B2C customers†would actually switch brands if they werenít getting a personalized experience.5,6
+Over the last decade, tech-savvy users have fueled a shift in software products becoming more intuitive, powerful, affordable, and easy to use. This is sometimes called the ‚Äúconsumerization of products‚Äù. In the B2B world corporate buyers have shifted from asking sales+support what products to buy to asking the front-line workers what products they‚Äôd prefer to use. Additional market conditions include the following:
+* Buyers want to self-educate rather than speak to sales; 75% of B2B IT buyers¬†prefer to buy through an app or website.2
+* Users demand immediate gratification and quickly give up on products that don‚Äôt provide it. 21% of users open a mobile app once and then abandon. And by day 90,¬†71% of app users¬†have churned completely.3,4
+* 80% of people are more likely to do business with a company that offers personalization. Salesforce reports 52% of B2C customers¬†would actually switch brands if they weren‚Äôt getting a personalized experience.5,6
 * Users will ditch clunky solutions. 39% of mid-sized companies turned over their SaaS stack in 20187.
 
-Outstanding user experiences have become more foundational to success as digital marketers drive growth through lifecycle metrics (acquisition, engagement, retention) instead of sales teams measuring units. Users donít want to interact with sales or marketing any longer. Growth has shifted away from sales & marketing to product-led.
+Outstanding user experiences have become more foundational to success as digital marketers drive growth through lifecycle metrics (acquisition, engagement, retention) instead of sales teams measuring units. Users don‚Äôt want to interact with sales or marketing any longer. Growth has shifted away from sales & marketing to product-led.
 
 Product-Led Growth (PLG)
 Product-Led Growth enables the product experiences to drive the entire user lifecycle. Every discipline in the company (marketing, product, sale, engineering, etc.) focused on the product experience as the tool to achieve and sustain growth. Data is used to validate ideas that can come from many sources with the goal to reduce friction, maximize engagement & retention, and drive loyalty & advocacy in the product.
 
-Becoming product-led requires a somewhat substantial cultural shift at both the individual and company level that takes time, effort, and commitment. And specifically, because it involves culture, the difficulty of that shift shouldnít be understated.
+Becoming product-led requires a somewhat substantial cultural shift at both the individual and company level that takes time, effort, and commitment. And specifically, because it involves culture, the difficulty of that shift shouldn‚Äôt be understated.
 
 Who does this well?
 * TikTok (B2C) | CAGR 192%8 | created exceptionally well curated and personalized feeds of short video content that can be consumed in micro-moments.
 * Duolingo (B2C) | CAGR 110%9 | changed the way users learn a new language through engagement and gamification.
 * Instagram (B2C) | CAGR 59%10 | seamlessly connects users with brands, celebrities, thought-leaders, friends, and family to share their stories.
-* Figma (B2B) | CAGR 52%11 | acquired by Adobe in Septí 2022 at a valuation of $20B12 because it solved customer pain points like organization, file management, and real-time collab.
+* Figma (B2B) | CAGR 52%11 | acquired by Adobe in Sept‚Äô 2022 at a valuation of $20B12 because it solved customer pain points like organization, file management, and real-time collab.
 * Slack (B2B) | CAGR 46%13 | 65%14 of Fortune 100 companies pay and advocate for Slack due because of its UX.
 * Spotify (B2C) | CAGR of 24%15 | met the user need better than anyone else (access to the most listening content by far) and leveraged social loops to grow their user base.
 
@@ -39,29 +39,29 @@ Principle 2: data and experiment informed
 PLG teams are very focused on data. They monitor drop-offs in funnels and friction in user journeys because those insights help them meet unmet and unfulfilled needs (#1 above). As a booster, data technology has evolved as well making data collection and storage easy and cheap. A broad set of democratized data has become almost table-stakes for PLG teams. See the Booking.com example in Appendix B.
 
 Principle 3: value before revenue
-PLG companies value users finding value in the product very quickly (measure by TTV) via ìmagic momentsî before being asked to pay. Some example business models that support this strategy include free trials (Netflix), freemium (Spotify), or open source (Android). Some notable best practices to enable value before revenue.
-* Understand the ìmagic momentsî that lead to users being more likely to retain and purchase.
+PLG companies value users finding value in the product very quickly (measure by TTV) via ‚Äúmagic moments‚Äù before being asked to pay. Some example business models that support this strategy include free trials (Netflix), freemium (Spotify), or open source (Android). Some notable best practices to enable value before revenue.
+* Understand the ‚Äúmagic moments‚Äù that lead to users being more likely to retain and purchase.
 * Keep the initial product experience simple and remove any/all friction from users finding those moments.
-* Allow users to realize value in the product before theyíre asked to pay for anything.
+* Allow users to realize value in the product before they‚Äôre asked to pay for anything.
 * If the product requires a human touchpoint, put customer success before sales.
-* For products that require deeper integrations to get startedólike onboarding an APIódocumentation and self-serve tools are essential. Avoid the friction of having to contact support.
-Note: this process is all within the product and doesnít require sales or marketing motions. See the Duolingo example in Appendix B.
+* For products that require deeper integrations to get started‚Äîlike onboarding an API‚Äîdocumentation and self-serve tools are essential. Avoid the friction of having to contact support.
+Note: this process is all within the product and doesn‚Äôt require sales or marketing motions. See the Duolingo example in Appendix B.
 
 Principle 4: user-driven growth
-User-generated growth leverages the productís existing users to attract new ones through an acquisition loop. Then the product drives engagement and retention of these new users through simple and personalized onboarding experiences to build new habits. And the loop continues. The more people use and find value in a product or service the more likely they are to recommend the product to their circles of influence. Social proof through recommendations or endorsements (either implicit or explicit) from ìpeople like meî is far more powerful than any Microsoft GTM motion. This is the backbone of low-cost, user-generated growth and avoids a dependency on marketing spend. See the Morning Brew example in Appendix B.
+User-generated growth leverages the product‚Äôs existing users to attract new ones through an acquisition loop. Then the product drives engagement and retention of these new users through simple and personalized onboarding experiences to build new habits. And the loop continues. The more people use and find value in a product or service the more likely they are to recommend the product to their circles of influence. Social proof through recommendations or endorsements (either implicit or explicit) from ‚Äúpeople like me‚Äù is far more powerful than any Microsoft GTM motion. This is the backbone of low-cost, user-generated growth and avoids a dependency on marketing spend. See the Morning Brew example in Appendix B.
 
 Principle 5: create the culture
-As stated above, Product-Led growth is a difficult muscle to build needs a company-wide culture that supports coordination and collaboration across products/teams/divisions. Cross-functional teams are required to make PLG work. Breaking down the discipline and decision-making silos is essential and improves the cross-functional teamís ability to communicate and understand one another. Sales-led and marketing-led development strategies can sometimes conflict with Product-Led growth.
+As stated above, Product-Led growth is a difficult muscle to build needs a company-wide culture that supports coordination and collaboration across products/teams/divisions. Cross-functional teams are required to make PLG work. Breaking down the discipline and decision-making silos is essential and improves the cross-functional team‚Äôs ability to communicate and understand one another. Sales-led and marketing-led development strategies can sometimes conflict with Product-Led growth.
 
 Metrics
-Aligning the company on a core set of metrics is an important part of the PLG process because it creates a universal language for talking about and reporting on growth. Microsoftís journey into PLG to date has been closely tied to the Product 365 SLT forum. The template that guides teams through writing their pre-read paper has a set of Core metrics in section 1 that outline a productís growth by the numbers.
+Aligning the company on a core set of metrics is an important part of the PLG process because it creates a universal language for talking about and reporting on growth. Microsoft‚Äôs journey into PLG to date has been closely tied to the Product 365 SLT forum. The template that guides teams through writing their pre-read paper has a set of Core metrics in section 1 that outline a product‚Äôs growth by the numbers.
 
 Why make the shift?
-Shifting towards PLG and away from marketing or sales led approaches takes effort, alignment, and dedication from the entire company. More planning and resources may be required up front to build and cultivate a PLG muscle over time because it isnít a ìset it and forget itî strategy.
+Shifting towards PLG and away from marketing or sales led approaches takes effort, alignment, and dedication from the entire company. More planning and resources may be required up front to build and cultivate a PLG muscle over time because it isn‚Äôt a ‚Äúset it and forget it‚Äù strategy.
 
 But when products are hyper focused on the user lifecycle (acquisition, engagement, retention) then the company benefits from 1.) a more intuitive product with satisfied users who are highly retained and have higher LTV; 2.) users who self-select into more expensive versions of the product lowering CAC and shortening sales cycles; and 3.) users who recommend the product to their circles of influence, which is a form of user-generated growth with $0 marketing spend.
 
-The result is companies with higher revenue and stronger valuations. According to OpenViewís Product-Led Growth Index, PLG companies are valued 2x higher than the SaaS median with a 6% higher growth rate16.
+The result is companies with higher revenue and stronger valuations. According to OpenView‚Äôs Product-Led Growth Index, PLG companies are valued 2x higher than the SaaS median with a 6% higher growth rate16.
 
 Appendix A: Additional reading
 * https://www.productled.org/foundations/what-is-product-led-growth
@@ -73,13 +73,13 @@ Appendix A: Additional reading
 
 Appendix B: Best-in-Class examples
 Principle 1: design for the user17
-Appleís unique design aesthetic is noticeable in everything from their web design language to their hardware devices, to their retail stores. Their products are incredibly user friendly thinking about wide ranges of users and their needs.
+Apple‚Äôs unique design aesthetic is noticeable in everything from their web design language to their hardware devices, to their retail stores. Their products are incredibly user friendly thinking about wide ranges of users and their needs.
 
-When the Apple Watch was released, it quickly became the best-selling wearable device with 4.2M units sold in a single quarter18. With Series 2, Apple discovered that users cared less about battery life and more about other factors like speed and accessibility, those features were built into the Series 3 which maintained Appleís hypergrowth in this device segment.
+When the Apple Watch was released, it quickly became the best-selling wearable device with 4.2M units sold in a single quarter18. With Series 2, Apple discovered that users cared less about battery life and more about other factors like speed and accessibility, those features were built into the Series 3 which maintained Apple‚Äôs hypergrowth in this device segment.
 
 
 Principle 2: data and experiment informed19
-Booking.com has a core tenant that Anyone at the company can test anything without management permission. They run more than 1000 tests at any given time totaling somewhere near 25,000 tests per year transforming the company from a small startup to the worldís largest travel site in less than 20 years. Other core tenants of the company include a culture of curiosity and that data trumps opinion. 
+Booking.com has a core tenant that Anyone at the company can test anything without management permission. They run more than 1000 tests at any given time totaling somewhere near 25,000 tests per year transforming the company from a small startup to the world‚Äôs largest travel site in less than 20 years. Other core tenants of the company include a culture of curiosity and that data trumps opinion. 
 
 
 
@@ -91,11 +91,11 @@ Duolingo engagement tactics20
 2. Gamification. There are too many options on this screen, but gamification is key to driving compulsory behaviors and engagement.
 3. Streaks drive retention; however, missing one is a big contributor to churn.
 4. Encouraging users to invest further after a reward reinforces compulsory habits making them sticky.
-5. Respecting usersí attention is an interesting choice that users are likely to appreciate. Stopping communications though the user hasnít explicitly said to do so builds credit.
+5. Respecting users‚Äô attention is an interesting choice that users are likely to appreciate. Stopping communications though the user hasn‚Äôt explicitly said to do so builds credit.
 
 
 Principle 4: user-driven growth
-Morning Brew uses their highly engaged and compulsory subscriber base to share the newsletter with their network in exchange for SWAG of a service they support, which in turn is word of mouth (WoM) advertising. 30% of Morning Brewís 2.5M daily subscribers came through their affiliate marketing alone.21 
+Morning Brew uses their highly engaged and compulsory subscriber base to share the newsletter with their network in exchange for SWAG of a service they support, which in turn is word of mouth (WoM) advertising. 30% of Morning Brew‚Äôs 2.5M daily subscribers came through their affiliate marketing alone.21 
 
 
 

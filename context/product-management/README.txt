@@ -13,7 +13,7 @@ o Help product teams define a set of prioritized growth investments based on est
 * Product 103 - Experiment Fundamentals
 o Help product teams turn a set of prioritized investments with estimated impact into well-formed experiments.
 * Product 104 - Metrics
-o Help product teams define everything from metrics ladders to experiment success criteria in order to ensure we’re building the right products for our users.
+o Help product teams define everything from metrics ladders to experiment success criteria in order to ensure weâ€™re building the right products for our users.
 * Product 105 - Positioning and GTM
 o Help product teams position their products and/or features and bring them to market.
 

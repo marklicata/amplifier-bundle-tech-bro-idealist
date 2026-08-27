@@ -15,15 +15,15 @@ Appendix A: additional questions to consider	5
 Product area overview	5
 Why now	5
 Part 1: Product Ethos
-Defining the product ethos (aka the character or core identity of the product) can sometimes feel like an unimportant step of the product development process. Product managers typically get really excited about specific problems, features, or opportunities and forego this important up front work. But in reality this is the most important step because everything should tie back to it. Itís fairly obvious when a productís vision and mission arenít clear. The product will appear like a ship without a rudder; solving for too many disparate needs for too many audiences across too many platforms.
+Defining the product ethos (aka the character or core identity of the product) can sometimes feel like an unimportant step of the product development process. Product managers typically get really excited about specific problems, features, or opportunities and forego this important up front work. But in reality this is the most important step because everything should tie back to it. It‚Äôs fairly obvious when a product‚Äôs vision and mission aren‚Äôt clear. The product will appear like a ship without a rudder; solving for too many disparate needs for too many audiences across too many platforms.
 
-Taking time to define your productís Ethos will give it a rudder or north star and guide it from that point forward. Jeff Weiner provided an excellent framework in an article titled From Vision to Values: The Importance of Defining Your Core. Here are some helpful elements from that article.
+Taking time to define your product‚Äôs Ethos will give it a rudder or north star and guide it from that point forward. Jeff Weiner provided an excellent framework in an article titled From Vision to Values: The Importance of Defining Your Core. Here are some helpful elements from that article.
 
 * Purpose: define why the product exists. What high-level problem will it solve for users, what is the target audience, and how will it benefit users.
-* Vision: write a product vision statement. This is the productís dream or true north that aligns with the company's overall mission and values.
-* Mission: define the productís mission. This should be a specific and measurable objective to get closer to the vision. It can change slightly over time as new objectives emerge but should always ladder to the vision and not be confused for another productís mission.
+* Vision: write a product vision statement. This is the product‚Äôs dream or true north that aligns with the company's overall mission and values.
+* Mission: define the product‚Äôs mission. This should be a specific and measurable objective to get closer to the vision. It can change slightly over time as new objectives emerge but should always ladder to the vision and not be confused for another product‚Äôs mission.
 * Strategy: create a one-line strategy for the product including your strategic position and how you will win. 
-* Competitors: define how the product will navigate its competitive landscape to achieve its objectives. Requires clear understanding and definition of a productís strengths and competitive advantages.
+* Competitors: define how the product will navigate its competitive landscape to achieve its objectives. Requires clear understanding and definition of a product‚Äôs strengths and competitive advantages.
 * Evangelism: evangelize your product purpose, vision, mission, and strategy with key leaders. This ensures 1.) everyone is aligned and working towards the same goal. And 2.) aligns partner teams to support/help you.
 
 Exploratory question: the first step in creating a successful product is ensuring everyone from top executives to jr. devs are pointed the same direction. What is your product Purpose, Vision, Mission, and Strategy? Have they ever been written down? Would everyone agree on them?
@@ -39,30 +39,30 @@ Good product managers approach creating user value from one of the following two
 4. Product insights. Use product analytics to generate funnels and core journeys and identify areas that could be improved.
 5. Collaborate with experts. Work with experts in your product area to gain external perspective that can help identify areas to improve.
 
-Exploratory question: using the tools above, what are the biggest gaps in the product? Is it a feature that doesnít exist but should? Is it friction in an existing funnel? Maybe awareness that a solution for a specific user problem already exists? Collaborate with others because our observations as product managers are subjective!
+Exploratory question: using the tools above, what are the biggest gaps in the product? Is it a feature that doesn‚Äôt exist but should? Is it friction in an existing funnel? Maybe awareness that a solution for a specific user problem already exists? Collaborate with others because our observations as product managers are subjective!
 
 
 
 North Star contribution
-As you look to define user needs that can be solved, keep in mind your product north star metric(s). Products and/or features you build should contribute back to the productís value prop, output metrics, and true north metric(s). If not, then we should ask why weíre building them. The product metrics playbook details how to approach metrics ladders and identifying key input, output, and true north metrics.
+As you look to define user needs that can be solved, keep in mind your product north star metric(s). Products and/or features you build should contribute back to the product‚Äôs value prop, output metrics, and true north metric(s). If not, then we should ask why we‚Äôre building them. The product metrics playbook details how to approach metrics ladders and identifying key input, output, and true north metrics.
 
 Differentiation
 Hundreds of companies and thousands of product managers are actively thinking about how to differentiate their product through user value and gain share in the market. So how do we create long-term differentiation? Simple, this is where growth hacking comes into play. Getting into the market, learning, and rapidly iterating is the easiest way to chart a path when the direction is unclear. A good metric to track is how fast the team is learning.
 
-Exploratory question: where can your product provide new, differentiated user value that maps to the productís vision and mission? How fast can the team experiment & learn?
+Exploratory question: where can your product provide new, differentiated user value that maps to the product‚Äôs vision and mission? How fast can the team experiment & learn?
 
 Additionally, do your users believe your product is valuable and worth their time? Focusing on building a great product that users love is the best path. 
 
-Exploratory question: how will you measure user value? This is a unique area where success isnít intrinsically clear. The product metrics playbook is a useful tool for defining user input metrics signaling user value.
-Monetization plan†
+Exploratory question: how will you measure user value? This is a unique area where success isn‚Äôt intrinsically clear. The product metrics playbook is a useful tool for defining user input metrics signaling user value.
+Monetization plan¬†
 Outline how you will monetize the product or feature. This plan includes both WHAT will be sold; products are typically monetized through unit sales, usage volume, or subscription. As well as HOW it will be sold; i.e. what channels and pricing strategy will be used.
 
 Exploratory question: Is this product or feature meant to enhance an existing product that we sell, or is it a separate product? Is it something users are willing to pay for?
 
 The Business Model Studio can help identify pricing drivers for new businesses.
 
-Cost Structure†
-Understanding and outline the cost structure of the product or business. What COGS does the team need to consider in route to delivering the productsí value prop to the user? Technical infrastructure, supply chain, support, delivery, etc.
+Cost Structure¬†
+Understanding and outline the cost structure of the product or business. What COGS does the team need to consider in route to delivering the products‚Äô value prop to the user? Technical infrastructure, supply chain, support, delivery, etc.
 
 
 This playbook is designed to help product teams define the ethos of their product; the purpose, vision, and mission. And then identify user needs that the product could solve for. The Growth Ideas playbook will build on this to define a set a of prioritized growth investments. Additionally, the AI Product Building playbook adds to this content by deep-diving into AI products and features.
@@ -75,7 +75,7 @@ Product area overview
 * Do these critical user journeys differ by device type (web vs. desktop vs. mobile vs. tablet)?
 
 Why now
-* What market conditions exist that suggest the product would benefit form AI? Why is ìright nowî the time to make this pivot? How have your users and their behaviors changed: basic environment, needs, market trends, etc.?
+* What market conditions exist that suggest the product would benefit form AI? Why is ‚Äúright now‚Äù the time to make this pivot? How have your users and their behaviors changed: basic environment, needs, market trends, etc.?
 * What competitive analysis suggests now is a good time to invest in AI? Who are the main competitors and why? How long have they been in the market?
 * What user research suggests now is a good time for the product to invest in AI? What key insights has the team learned?
 * What is that Total Addressable Market (TAM) and Service Addressable Market (SAM) for your product? Has AI changed that? And what Share of Market (SOM) does the product currently capture?
