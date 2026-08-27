@@ -75,6 +75,25 @@
 # CHANGELOG
 # =============================================================================
 #
+# v1.5.0 (2026-08-27):
+#   - NEW FEATURE: Oracle Principles Check step (oracle-check)
+#     * ROOT CAUSE: The 1-pager generates a well-structured document but does
+#       not challenge vague answers. "Product teams generally" passes through
+#       unchallenged, producing a document that looks complete but exhibits the
+#       oracle failure modes that prevent insights from landing.
+#     * THE FIX: A third step reviews the generated 1-pager against the Five
+#       Oracle Failure Modes and appends targeted interrogation questions for
+#       any principles at risk. The 1-pager is a draft until all answered.
+#     * DESIGN: Questions append to the 1-pager file (not a separate doc) so
+#       feedback is colocated with content. JSON output prints to stdout only.
+#     * THE FIVE MODES: (1) Finish Line is Adoption, not Publication.
+#       (2) "They Don't Get It" is your problem, not theirs.
+#       (3) Close the Feedback Loop.
+#       (4) Optimize for Utility, not Novelty.
+#       (5) Name an Owner.
+#     * BONUS CHECK: If "Evidence It Matters" is Unknown, flags that research
+#       insights should be documented in the repo, not just code.
+#
 # v1.4.0 (2026-08-19):
 #   - NEW FEATURE: Multi-repo support via `repo_paths` context variable
 #     * `repo_paths` accepts a comma-separated or newline-separated list of repo
@@ -256,7 +275,7 @@
 
 name: "product-1-pager"
 description: "Analyze one or more repositories (local path, GitHub URL via GitHub API, or any Git URL via clone) and generate a concise, senior-leader-ready product 1-pager. Covers stage, problem, users, evidence, ownership, and success criteria. Supports multi-repo synthesis via repo_paths. Outputs markdown or JSON."
-version: "1.4.0"
+version: "1.5.0"
 tags: ["product", "1-pager", "research", "repo-analysis", "product-sense"]
 
 context:
@@ -887,3 +906,142 @@ steps:
       of the file so the user can read it without opening it.
     output: "one_pager"
     timeout: 900
+
+
+  # ---------------------------------------------------------------------------
+  # Step 3: Oracle Principles Check
+  # Reviews the generated 1-pager against the Five Oracle Failure Modes and
+  # appends targeted interrogation questions for any principles at risk.
+  # The 1-pager is a draft until all questions are answered inline.
+  # ---------------------------------------------------------------------------
+  - id: "oracle-check"
+    agent: "self"
+    model_role: "critique"
+    timeout: 600
+    prompt: |
+      You have just generated a product 1-pager. Your job is to run the Oracle
+      Principles Check: review the draft against the Five Oracle Failure Modes
+      and append targeted interrogation questions for any principles at risk.
+
+      THE GENERATED 1-PAGER:
+      {{one_pager}}
+
+      OUTPUT FORMAT REQUESTED: {{output_format}}
+
+      ---
+
+      ## THE FIVE ORACLE FAILURE MODES
+
+      Run each check against the 1-pager above.
+
+      **1. THE FINISH LINE IS ADOPTION, NOT PUBLICATION**
+      Check "What Success Looks Like": Does it describe adoption by a real person
+      (a decision changed, a behavior shifted, a team that used this insight)?
+      Or does it describe publication, shipping, or completion of research?
+      "Teams can use this framework" is not adoption.
+      "The Foo team shipped X without rebuilding their retrieval stack" is adoption.
+
+      **2. "THEY DON'T GET IT" IS YOUR PROBLEM, NOT THEIRS**
+      Check "The Users": Are they specific enough that you could call one of them
+      on the phone today? "Product teams," "AI researchers," "engineering orgs,"
+      or "anyone interested in AI" are not users. A user is a role at a specific
+      team with a specific problem right now.
+
+      **3. CLOSE THE FEEDBACK LOOP**
+      Check "Impact Path" and the full document: Is there any named mechanism for
+      learning in 60-90 days whether this insight was actually used? Not a hope,
+      not "we'll follow up" - a named, specific mechanism.
+
+      **4. OPTIMIZE FOR UTILITY, NOT NOVELTY**
+      Check "Evidence It Matters": Does it show current, named demand from a real
+      team with a real problem this quarter? "Unknown" or purely speculative
+      evidence means the insight may be ahead of its time with no team to land in.
+
+      **5. NAME AN OWNER**
+      Check "Who Owns This Space": Is there a specific team or person named? Or
+      does it say "Unknown," leave it blank, or use a category like "platform
+      teams" or "AI orgs"?
+
+      **BONUS CHECK - INSIGHTS IN REPO**
+      If "Evidence It Matters" is "Unknown - needs real data signal," this likely
+      means the repo contains code but no documented insights or learnings.
+      Research output should be in the repo: why decisions were made, what was
+      learned, what worked and what did not. Flag if this documentation is absent.
+
+      ---
+
+      ## CLASSIFICATION
+
+      For each of the 5 failure modes (and the bonus check if applicable):
+
+      - **CLEAR**: The 1-pager avoids this failure with specific evidence from the text.
+      - **AT RISK**: Warning signs present. A specific question is warranted.
+      - **TRIGGERED**: The 1-pager clearly exhibits this failure mode. A question is required.
+
+      For every AT RISK or TRIGGERED result, write one specific, pointed question
+      grounded in the exact content of this 1-pager. Not generic - rooted in the doc.
+
+      GOOD: "You wrote that success looks like 'teams adopting the framework.' Name
+      the first team and describe what 'adopted' means in practice - a PR merged,
+      a design decision made, a specific behavior changed?"
+
+      BAD: "What does success look like?" (too generic - not rooted in the text)
+
+      If all five are CLEAR: write only "Oracle Principles Check: CLEAN. No
+      interrogation required. The 1-pager is ready to share." and stop - do not
+      append anything to the file.
+
+      ---
+
+      ## FINAL ACTION
+
+      For MARKDOWN output (output_format is not "json"):
+      Read the existing product-1-pager.md from the current working directory, then
+      append the following section to the bottom of the file. Do not overwrite - append.
+
+      Use this template (fill in the bracketed parts with your actual classifications
+      and questions):
+
+      ```
+      ---
+
+      ## Oracle Principles Review
+
+      *This 1-pager is a draft until the questions below are answered. Answer inline
+      beneath each question, then remove this header block when done.*
+
+      ### 1. Finish Line: Adoption - [CLEAR / AT RISK / TRIGGERED]
+      [Your specific question here, omit this line if CLEAR]
+      > [Answer here]
+
+      ### 2. Adoption Failure - [CLEAR / AT RISK / TRIGGERED]
+      [Your specific question here, omit this line if CLEAR]
+      > [Answer here]
+
+      ### 3. Feedback Loop - [CLEAR / AT RISK / TRIGGERED]
+      [Your specific question here, omit this line if CLEAR]
+      > [Answer here]
+
+      ### 4. Utility vs. Novelty - [CLEAR / AT RISK / TRIGGERED]
+      [Your specific question here, omit this line if CLEAR]
+      > [Answer here]
+
+      ### 5. Named Owner - [CLEAR / AT RISK / TRIGGERED]
+      [Your specific question here, omit this line if CLEAR]
+      > [Answer here]
+      ```
+
+      If the bonus Insights in Repo check was triggered, append this section too:
+      ```
+      ### Bonus: Insights in Repo - [CLEAR / TRIGGERED]
+      [Your specific question here, omit this line if CLEAR]
+      > [Answer here]
+      ```
+
+      For JSON output (output_format is "json"):
+      Do NOT modify the JSON file. Print the oracle check results directly in your
+      response using the same classification format.
+
+      After writing (or printing), summarize for the researcher:
+      - Which principles are CLEAR, AT RISK, and TRIGGERED
+      - Whether the 1-pager is ready to share or still a draft
