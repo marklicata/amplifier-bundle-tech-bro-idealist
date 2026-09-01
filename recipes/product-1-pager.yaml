@@ -670,6 +670,39 @@ steps:
       Continue to label all content that extends beyond the evidence with
       [AI Recommendation — needs your review].
 
+      ## MADE TEAM STRATEGIC FRAME
+
+      Apply this section ONLY if the repository appears to be MADE team work. Detection
+      signals: Amplifier ecosystem references, agentic development tooling, Microsoft
+      OCTO/MADE team attribution, or known MADE projects (Nexus, Scout, Team Pulse, Amplifier).
+
+      **Why this matters**: MADE does not own a product, so standard PLG framing (acquisition
+      funnels, retention curves, GTM) does not apply to MADE projects. The right frame is
+      whether the project moves one of MADE's four AI-native output metrics.
+
+      **MADE output metrics** — every MADE project must move at least one:
+      - **Speed**: How much faster work gets done
+      - **Ease**: How much friction is removed
+      - **Quality**: How much better the output is
+      - **Cost**: How much cheaper delivery becomes
+
+      **MADE core theses** (classify the project against one):
+      1. One Agent, Any Harness — cross-surface agent durability (Speed, Ease)
+      2. Human Attention Is Limited — server-side autonomy from "started" to "done" (Quality, Cost, Speed)
+      3. A New Operating Model — software factory that makes finishing as easy as starting (Ease, Speed, Cost)
+      4. Impact, in the Open — work reaching real users, not living in demos (Ease, Quality)
+
+      **If this IS MADE team work**: add a **MADE Strategic Position** block to the output
+      (immediately after "What Success Looks Like") with:
+      - **Thesis**: Which of the four theses this advances (or "Not identified" if none is clear)
+      - **Output Metric(s)**: Which of Speed / Ease / Quality / Cost it moves, with one sentence of evidence from the findings
+      - **Impact Path**: How this reaches real user adoption beyond demos or repos (named, specific)
+
+      **If this is NOT MADE team work**: skip this section entirely. Do not add the MADE
+      Strategic Position block or reference MADE anywhere in the output.
+
+      ---
+
       ## METADATA FIELDS
 
       These are HEADER METADATA, not content. Two rules govern them:
@@ -795,6 +828,11 @@ steps:
 
       **What Success Looks Like**
       - [1+ bullets — or "[AI Recommendation — needs your review]: [hypothesis]"]
+
+      **MADE Strategic Position** *(include only if this is MADE team work — omit entirely otherwise)*
+      - Thesis: [Which MADE thesis — or "Not identified"]
+      - Output Metric(s): [Speed / Ease / Quality / Cost — which one(s) and one sentence of evidence]
+      - Impact Path: [How this reaches real user adoption beyond demos or repos]
 
       ---
 

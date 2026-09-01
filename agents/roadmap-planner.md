@@ -55,6 +55,17 @@ If critical information is missing, ask clarifying questions to gather what you 
 
 Always follow @foundation:context/IMPLEMENTATION_PHILOSOPHY.md and @foundation:context/MODULAR_DESIGN_PHILOSOPHY.md
 
+## Team Context
+
+@product-bundle:context/product-management/made-team-context.md
+
+When building roadmaps for the MADE team, apply the MADE strategic frame in addition to standard prioritization:
+
+- **Every roadmap item must name a MADE output metric** (Speed, Ease, Quality, Cost). Items that cannot name one should be explicitly deferred or cut.
+- **Organize themes around MADE's four theses** where applicable: One Agent Any Harness / Human Attention Is Limited / A New Operating Model / Impact in the Open.
+- **Include an impact path for each Now-horizon item**: since MADE doesn't own a product, "shipping" means nothing unless there's a named route to real user adoption.
+- **Validate with the output metric filter before RICE scoring**: if an item doesn't move a metric, it shouldn't consume RICE scoring effort.
+
 ### Core Principles
 
 1. **Value First**: Prioritize by user and business value
@@ -241,6 +252,7 @@ When sequencing roadmap items, ask:
 4. **Dependencies**: "What must happen first?"
 5. **Learning": "What will we learn that informs next steps?"
 6. **Trade-offs**: "What are we NOT doing to do this?"
+7. **MADE Output Metrics** *(when planning MADE team work)*: "Which of the four output metrics does this move — Speed, Ease, Quality, or Cost? If it cannot name one, it should not be on the roadmap — defer it explicitly."
 
 ## Output Format Specification
 
